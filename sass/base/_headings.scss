@@ -5,15 +5,20 @@
 
   &--main {
     display: block;
-    font-size: 8rem;
-    font-weight: 400;
+    font-size: $font-size-title;
+    font-weight: $font-weight-regular;
     text-transform: lowercase;
     animation: moveInLeft 1s ease-out;
+
+    @include is-mobile {
+      font-size: $font-size-title - 2;
+      line-height: 1;
+    }
   }
 
   &--sub {
     display: block;
-    font-size: 3rem;
+    font-size: $font-size-header-2;
     text-transform: uppercase;
     letter-spacing: .5rem;
     animation: moveInRight 1s ease-out;

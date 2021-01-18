@@ -7,10 +7,13 @@ $weights: (
 
 
 body {
-  padding: 3rem;
   font-family: 'Lato', sans-serif;
   font-size: $default-font-size;
   font-weight: light;
   line-height: 1.7;
   color: $color-grey;
+
+  @include is-tablet-landscape {
+    font-size: $font-size-sm;
+  }
 }

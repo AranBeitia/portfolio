@@ -15,6 +15,11 @@ html {
 
 body {
   box-sizing: border-box;
+  padding: 3rem;
+
+  @include is-mobile {
+    padding: 0;
+  }
 }
 
 @import 'animations';

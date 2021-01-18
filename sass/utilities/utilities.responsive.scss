@@ -8,21 +8,21 @@ $resolution: (
 );
 
 @mixin is-mobile() {
-  @media screen and (min-width: mobile) { @content; }
+  @media screen and (max-width: $breakpoint-xs) { @content; }
 }
 
 @mixin is-tablet-portrait() {
-  @media screen and (min-width: tablet-portrait) { @content; }
+  @media screen and (max-width: $breakpoint-xs) { @content; }
 }
 
 @mixin is-tablet-landscape() {
-  @media screen and (min-width: tablet-landscape) { @content; }
+  @media screen and (max-width: $breakpoint-sm) { @content; }
 }
 
 @mixin is-desktop() {
-  @media screen and (min-width: desktop) { @content; }
+  @media screen and (max-width: $breakpoint-md) { @content; }
 }
 
 @mixin is-big-desktop() {
-  @media screen and (min-width: big-desktop) { @content; }
+  @media screen and (min-width: $breakpoint-lg) { @content; }
 }
