@@ -1,0 +1,28 @@
+// Resolution variables:
+$resolution: (
+  mobile: $breakpoint-xs,
+  tablet-portrait: $breakpoint-xs,
+  tablet-landscape: $breakpoint-sm,
+  desktop: $breakpoint-md,
+  big-desktop: $breakpoint-lg
+);
+
+@mixin is-mobile() {
+  @media screen and (min-width: mobile) { @content; }
+}
+
+@mixin is-tablet-portrait() {
+  @media screen and (min-width: tablet-portrait) { @content; }
+}
+
+@mixin is-tablet-landscape() {
+  @media screen and (min-width: tablet-landscape) { @content; }
+}
+
+@mixin is-desktop() {
+  @media screen and (min-width: desktop) { @content; }
+}
+
+@mixin is-big-desktop() {
+  @media screen and (min-width: big-desktop) { @content; }
+}

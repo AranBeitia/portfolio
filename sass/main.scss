@@ -2,10 +2,9 @@
 @import 'abstracts/mixins';
 @import 'abstracts/variables';
 
+@import 'utilities/utilities';
+
 @import 'base/base';
-@import 'base/animations';
-@import 'base/typography';
-@import 'base/utilities';
 
 @import 'components/button';
 @import 'components/card';
