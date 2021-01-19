@@ -2,6 +2,10 @@
   background-color: $color-grey-light;
   padding: 25rem 0;
   margin-top: -25vh;
+
+  @include is-tablet-landscape {
+    padding: 15rem 0;
+  }
 }
 
 .section-features {
@@ -18,17 +22,29 @@
   & > * {
     transform: skewY(7deg);
   }
+
+  @include is-tablet-landscape {
+    padding: 10rem 0;
+  }
 }
 
 .section-tours {
   background-color: $color-grey-light;
   padding-top: 20rem;
   margin-top: -10vh;
+
+  @include is-tablet-landscape {
+    padding-top: 10rem;
+  }
 }
 
 .section-stories {
   padding: 15rem 0;
   background-color: $color-grey-light;
+
+  @include is-tablet-landscape {
+    padding: 5rem 0;
+  }
 }
 
 .section-book {
@@ -38,6 +54,10 @@
     $color-primary-light,
     $color-primary-dark
   );
+
+  @include is-tablet-landscape {
+    padding: 5rem 0;
+  }
 }
 
 .book {

@@ -7,12 +7,12 @@
     display: block;
     font-size: $font-size-title;
     font-weight: $font-weight-regular;
+    line-height: 1.2;
     text-transform: lowercase;
     animation: moveInLeft 1s ease-out;
 
-    @include is-mobile {
-      font-size: $font-size-title - 2;
-      line-height: 1;
+    @include is-tablet-landscape {
+      font-size: $font-size-title - 3;
     }
   }
 
@@ -22,6 +22,11 @@
     text-transform: uppercase;
     letter-spacing: .5rem;
     animation: moveInRight 1s ease-out;
+
+    @include is-mobile {
+      font-size: $font-size-header-2 - 2;
+      line-height: 1;
+    }
   }
 }
 

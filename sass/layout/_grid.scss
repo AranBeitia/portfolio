@@ -5,6 +5,15 @@
 
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
+
+    @include is-tablet-landscape {
+      margin-bottom: $gutter-vertical-small;
+    }
+  }
+
+  @include is-tablet-landscape {
+    max-width: 50rem;
+    padding: 0 3rem;
   }
 
   @include clearfix;
@@ -15,6 +24,15 @@
 
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+
+      @include is-mobile {
+        margin-right: 0;
+        margin-bottom: $gutter-vertical-small;
+      }
+    }
+
+    @include is-tablet-landscape {
+      width: 100%!important;
     }
   }
 
