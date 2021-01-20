@@ -74,8 +74,23 @@
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
 
+  @include is-mobile {
+    background-image: linear-gradient(
+      105deg, 
+      rgba($color-white, .9) 0%,
+      rgba($color-white, .9) 65%,
+      transparent 65%
+    ),
+    url(../img/hero2.jpg);
+    background-size: cover;
+  }
+
   &__form {
     width: 50%;
     padding: 6rem;
+
+    @include is-mobile {
+      width: 65%;
+    }
   }
 }
