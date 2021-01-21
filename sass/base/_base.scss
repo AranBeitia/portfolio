@@ -22,6 +22,11 @@ body {
   }
 }
 
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}
+
 @import 'animations';
 @import 'typography';
 @import 'headings';

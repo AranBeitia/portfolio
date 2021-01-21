@@ -1,6 +1,7 @@
 # npm run compile
 ```sh
-npm run compile:sass
+npm run serve
+npm run build:css
 ```
 
 # my-poc
