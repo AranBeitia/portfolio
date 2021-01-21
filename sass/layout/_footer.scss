@@ -1,56 +1,27 @@
 .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
   background-color: $color-grey-darker;
-  padding: 10rem 0;
-  font-size: 1.4rem;
-
-  @include is-tablet-landscape {
-    padding: 5rem 0;
-  }
-
-  &__logo-box {
-    text-align: center;
-    margin-bottom: 8rem;
-
-    @include is-tablet-landscape {
-      margin-bottom: 4rem;
-    }
-  }
 
   &__logo {
-    width: 150px;
+    width: 70px;
   }
 
-  &__navigation {
-    border-top: 1px solid $color-grey;
-    padding-top: 1.2rem;
-    display: inline-block;
-
-    @include is-tablet-landscape {
-      width: 100%;
-      text-align: center;
-    }
-  }
-
-  &__list {
-    list-style: none;
-  }
-
-  &__item {
-    display: inline-block;
-
-    &:not(:last-child) {
-      margin-right: 1.5rem;
-    }
+  &__copyright {
+    color: $color-white;
   }
 
   &__link {
     &:link,
     &:visited {
-      color: $color-grey-light;
-      background-color: $color-grey-darker;
+      display: inline-block;
+      padding-left: 1rem;
       text-decoration: none;
       text-transform: uppercase;
-      display: inline-block;
+      color: $color-grey-light;
+      background-color: $color-grey-darker;
       transition: all .2s;
     }
 
@@ -59,18 +30,6 @@
       color: $color-primary;
       box-shadow: 0 1rem 2rem rgba($color-black, .4);
       transform: rotate(5deg) scale(1.3);
-    }
-  }
-
-  &__copyright {
-    border-top: 1px solid $color-grey;
-    padding-top: 1.2rem;
-    width: 80%;
-    float: right;
-
-    @include is-tablet-landscape {
-      width: 100%;
-      float: none;
     }
   }
 }
