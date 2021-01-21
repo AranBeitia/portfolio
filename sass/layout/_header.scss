@@ -1,6 +1,5 @@
 .header {
   position: relative;
-  height: 95vh;
   background-image: linear-gradient(
     to right bottom, 
     rgba($color-primary, 0.8), 
@@ -9,10 +8,11 @@
   background-size: cover;
   background-position: top;
 
-  @supports (clip-path: poliyon(0, 0)) or (-webkit-clip-path: poliyon(0, 0)) {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-  }
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+        height: 95vh;
+    }
 
   @media (min-resolution: 192dpi) and (min-width: 600px),
          (-webkit-min-device-pixel-ratio: 2) and (min-width: 600px),
