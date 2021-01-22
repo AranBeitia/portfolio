@@ -235,11 +235,21 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #ffd1fb, #7f2885), url(../img/nat-5.jpg); }
+      background-image: linear-gradient(to right bottom, #ffd1fb, #7f2885), url(../img/web/axaHealthkeeper.png); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #99e688, #1d6d0c), url(../img/nat-6.jpg); }
+      background-image: linear-gradient(to right bottom, #99e688, #1d6d0c), url(../img/web/myEasySante.png); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/nat-7.jpg); }
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/web/dtw.png); }
+    .card__picture--4 {
+      background-image: linear-gradient(to right bottom, #ffd1fb, #7f2885), url(../img/web/veInteractive.png); }
+    .card__picture--5 {
+      background-image: linear-gradient(to right bottom, #99e688, #1d6d0c), url(../img/web/Novocal.jpg); }
+    .card__picture--6 {
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/web/SurePlanet.png); }
+    .card__picture--7 {
+      background-image: linear-gradient(to right bottom, #ffd1fb, #7f2885), url(../img/web/metaposta.png); }
+    .card__picture--8 {
+      background-image: linear-gradient(to right bottom, #99e688, #1d6d0c), url(../img/web/miConvenio.png); }
   .card__heading {
     position: absolute;
     top: 12rem;
