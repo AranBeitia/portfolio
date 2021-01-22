@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/icon-font.css">
   <link rel="stylesheet" href="css/style.css">
+
   <link rel="shortcut icon" type="image/png" href="favicon.png">
   <title>Arantza Beitia</title>
 </head>
@@ -21,63 +22,62 @@
     <div class="navigation__background"></div>
     <nav class="navigation__nav">
       <ul class="navigation__list">
+        <li class="navigation__item"><a href="#intro" class="navigation__link">Hello</a></li>
         <li class="navigation__item"><a href="#about" class="navigation__link">Sobre mí</a></li>
+        <li class="navigation__item"><a href="#skills" class="navigation__link">Skills</a></li>
         <li class="navigation__item"><a href="#portfolio" class="navigation__link">Portfolio</a></li>
-        <li class="navigation__item"><a href="#web" class="navigation__link">Desarrollo</a></li>
-        <li class="navigation__item"><a href="" class="navigation__link">Diseño</a></li>
         <li class="navigation__item"><a href="#contact" class="navigation__link">Contacto</a></li>
       </ul>
     </nav>
   </div>
+
   <header class="header" id="intro">
     <div class="header__logo-box">
       <img src="img/logo.svg" alt="Logo" class="header__logo">
     </div>
     <div class="header__text-box">
       <h1 class="heading-primary">
-        <span class="heading-primary--main">Hola, soy Arantza</span>
+        <span class="heading-primary--main">Hello, I am Arantza</span>
         <span class="heading-primary--sub">Front end UI developer</span>
-        <span>I design and code beautifully simple things, and I love what I do.</span>
       </h1>
       <a href="#" class="[ btn btn--white btn--animated ]">abajo</a>
     </div>
   </header>
-  <main>
+  <main class="main-content">
     <section class="section-about" id="about">
       <div class="u-center-text u-margin-bottom-big">
         <h2 class="heading-secondary">Un poco sobre mí</h2>
       </div>
       <div class="row">
         <div class="col-1-of-2">
-          <h3 class="heading-tertiary u-margin-bottom-small">Developer con ojo de diseñadora, diseñadora con mente de
-            developer</h3>
-          <p class="paragraph">Teniendo conocimientos de desarrollo, el diseño puede ser más creativo y razonable. Al
-            poder comprender el diseño, el resultado del desarrollo puede ser más preciso y claro.
-          </p>
-          <p class="paragraph">Desde que comencé hace casi 10 años, he trabajado para consultoras, para nuevas empresas,
-            como freelancer e incluso para
-            talleres de nuevas tecnologías para niños. He colaborado con personas talentosas para crear productos
-            digitales para uso
-            comercial y de consumo, y para producto propio.</p>
+          <h3 class="heading-tertiary u-margin-bottom-small">Codifico interfaces maravillosamente simples, y me encanta
+            lo que hago.</h3>
+          <p class="paragraph">Desde que comencé hace 10 años, he trabajado para consultoras, para nuevas empresas, como
+            freelancer e incluso para talleres de nuevas tecnologías para niños. He colaborado en el desarrollo
+            de productos digitales para uso comercial y de consumo, y para producto propio tanto en trabajos
+            de desarrollo front end, gestión de contenidos, posicionamiento y tareas de diseño gráfico.</p>
         </div>
         <div class="col-1-of-2">
           <div class="composition">
-            <img srcset="img/_me-1.jpg 300w, img/_me-1-large.jpg 1000w"
+            <img srcset="img/me-1.jpg 300w, img/_me-1-large.jpg 1000w"
               sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
-              class="composition__photo composition__photo--p1" alt="Photo 1" src="img/_me-1-large.jpg">
-            <img srcset="img/_me-2.jpg 300w, img/_me-2-large.jpg 1000w"
+              class="composition__photo composition__photo--p1" alt="Photo 1" src="img/me-1-large.jpg">
+            <img srcset="img/_me-2.jpg 300w, img/me-2-large.jpg 1000w"
               sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
-              class="composition__photo composition__photo--p2" alt="Photo 2" src="img/_me-2-large.jpg">
-            <img srcset="img/_me-3.jpg 300w, img/_me-3-large.jpg 1000w"
+              class="composition__photo composition__photo--p2" alt="Photo 2" src="img/me-2-large.jpg">
+            <img srcset="img/_me-3.jpg 300w, img/me-3-large.jpg 1000w"
               sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
-              class="composition__photo composition__photo--p3" alt="Photo 3" src="img/_me-3-large.jpg">
+              class="composition__photo composition__photo--p3" alt="Photo 3" src="img/me-3-large.jpg">
           </div>
         </div>
       </div>
     </section>
-    <section class="section-features" id="web">
+    <section class="section-features" id="skills">
+      <div class="u-center-text u-margin-bottom-big">
+        <h2 class="heading-secondary">Skills</h2>
+      </div>
       <div class="row">
-        <div class="col-1-of-3">
+        <div class="col-1-of-2">
           <div class="feature-box">
             <i class="feature-box__icon icon-basic-world"></i>
             <h3 class="heading-tertiary u-margin-bottom-small">Front end developer</h3>
@@ -98,30 +98,32 @@
             </ul>
           </div>
         </div>
-        <div class="col-1-of-3">
+        <div class="col-1-of-2">
           <div class="feature-box">
             <i class="feature-box__icon icon-basic-compass"></i>
-            <h3 class="heading-tertiary u-margin-bottom-small">Explore the world</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, tenetur
-              aspernatur. Sit officia explicabo, eveniet illo corporis est inventore veritatis at voluptatem fugiat
-              nesciunt animi nemo possimus consectetur sint voluptatum.</p>
-          </div>
-        </div>
-        <div class="col-1-of-3">
-          <div class="feature-box">
-            <i class="feature-box__icon icon-basic-map"></i>
-            <h3 class="heading-tertiary u-margin-bottom-small">Explore the world</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, tenetur
-              aspernatur. Sit officia explicabo, eveniet illo corporis est inventore veritatis at voluptatem fugiat
-              nesciunt animi nemo possimus consectetur sint voluptatum.</p>
+            <h3 class="heading-tertiary u-margin-bottom-small">Design</h3>
+            <p>En ciertas ocasiones he desarrollado tareas de diseño</p>
+            <h4>Design Tools:</h4>
+            <ul>
+              <li>
+                Balsamiq Mockups
+                Figma
+                Invision
+                Marvel
+                Pen & Paper
+                Sketch
+                Webflow
+                Zeplin
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
     <section class="section-tours" id="portfolio">
       <div class="u-center-text u-margin-bottom-big">
-        <h2 class="heading-secondary">My Recent Work</h2>
-        <p>Here are a few design projects I've worked on recently. Want to see more? Email me.</p>
+        <h2 class="heading-secondary">Ultimos trabajos</h2>
+        <p>Algunos de los proyectos de los que he formado parte recientemente.</p>
       </div>
       <div class="row">
         <div class="col-1-of-3">
@@ -130,7 +132,7 @@
               <div class="[ card__picture card__picture--1 ]">
               </div>
               <h4 class="card__heading">
-                <span class="card__heading-span card__heading-span--1">The sea explorer</span>
+                <span class="card__heading-span card__heading-span--1">Axa</span>
               </h4>
               <div class="card__details">
                 <ul>
@@ -159,7 +161,7 @@
               <div class="[ card__picture card__picture--2 ]">
               </div>
               <h4 class="card__heading">
-                <span class="card__heading-span card__heading-span--2">The sea explorer</span>
+                <span class="card__heading-span card__heading-span--2">Abacus</span>
               </h4>
               <div class="card__details">
                 <ul>
@@ -188,7 +190,7 @@
               <div class="[ card__picture card__picture--3 ]">
               </div>
               <h4 class="card__heading">
-                <span class="card__heading-span card__heading-span--3">The sea explorer</span>
+                <span class="card__heading-span card__heading-span--3">Donostia Tech Week</span>
               </h4>
               <div class="card__details">
                 <ul>
@@ -213,7 +215,156 @@
         </div>
       </div>
       <div class="u-center-text u-margin-top-big">
-        <a href="#" class="btn btn--magenta">Ver todos</a>
+        <a href="#" class="btn btn--magenta">Ver más</a>
+      </div>
+      <div class="row">
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="[ card__side card__side--front ]">
+              <div class="[ card__picture card__picture--1 ]">
+              </div>
+              <h4 class="card__heading">
+                <span class="card__heading-span card__heading-span--1">Ve interactive</span>
+              </h4>
+              <div class="card__details">
+                <ul>
+                  <li>3 day tours</li>
+                  <li>up to 30people</li>
+                  <li>2 tour guide</li>
+                  <li>2 tour guide</li>
+                  <li>2 tour guide</li>
+                </ul>
+              </div>
+            </div>
+            <div class="[ card__side card__side--back card__side--back-1 ]">
+              <div class="card__cta">
+                <div class="card__price-box">
+                  <p class="card__price-only">Only</p>
+                  <p class="card__price-value">$297</p>
+                </div>
+                <a href="#" class="btn btn--white">Book now!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="[ card__side card__side--front ]">
+              <div class="[ card__picture card__picture--2 ]">
+              </div>
+              <h4 class="card__heading">
+                <span class="card__heading-span card__heading-span--2">Novocal</span>
+              </h4>
+              <div class="card__details">
+                <ul>
+                  <li>3 day tours</li>
+                  <li>up to 30people</li>
+                  <li>2 tour guide</li>
+                  <li>2 tour guide</li>
+                  <li>2 tour guide</li>
+                </ul>
+              </div>
+            </div>
+            <div class="[ card__side card__side--back card__side--back-2 ]">
+              <div class="card__cta">
+                <div class="card__price-box">
+                  <p class="card__price-only">Only</p>
+                  <p class="card__price-value">$397</p>
+                </div>
+                <a href="#" class="btn btn--white">Book now!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="[ card__side card__side--front ]">
+              <div class="[ card__picture card__picture--3 ]">
+              </div>
+              <h4 class="card__heading">
+                <span class="card__heading-span card__heading-span--3">Sure planet</span>
+              </h4>
+              <div class="card__details">
+                <ul>
+                  <li>3 day tours</li>
+                  <li>up to 30people</li>
+                  <li>2 tour guide</li>
+                  <li>2 tour guide</li>
+                  <li>2 tour guide</li>
+                </ul>
+              </div>
+            </div>
+            <div class="[ card__side card__side--back card__side--back-3 ]">
+              <div class="card__cta">
+                <div class="card__price-box">
+                  <p class="card__price-only">Only</p>
+                  <p class="card__price-value">$497</p>
+                </div>
+                <a href="#" class="btn btn--white">Book now!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="[ card__side card__side--front ]">
+              <div class="[ card__picture card__picture--1 ]">
+              </div>
+              <h4 class="card__heading">
+                <span class="card__heading-span card__heading-span--1">Metaposta</span>
+              </h4>
+              <div class="card__details">
+                <ul>
+                  <li>3 day tours</li>
+                  <li>up to 30people</li>
+                  <li>2 tour guide</li>
+                  <li>2 tour guide</li>
+                  <li>2 tour guide</li>
+                </ul>
+              </div>
+            </div>
+            <div class="[ card__side card__side--back card__side--back-1 ]">
+              <div class="card__cta">
+                <div class="card__price-box">
+                  <p class="card__price-only">Only</p>
+                  <p class="card__price-value">$297</p>
+                </div>
+                <a href="#" class="btn btn--white">Book now!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="[ card__side card__side--front ]">
+              <div class="[ card__picture card__picture--2 ]">
+              </div>
+              <h4 class="card__heading">
+                <span class="card__heading-span card__heading-span--2">Mi convenio</span>
+              </h4>
+              <div class="card__details">
+                <ul>
+                  <li>3 day tours</li>
+                  <li>up to 30people</li>
+                  <li>2 tour guide</li>
+                  <li>2 tour guide</li>
+                  <li>2 tour guide</li>
+                </ul>
+              </div>
+            </div>
+            <div class="[ card__side card__side--back card__side--back-2 ]">
+              <div class="card__cta">
+                <div class="card__price-box">
+                  <p class="card__price-only">Only</p>
+                  <p class="card__price-value">$397</p>
+                </div>
+                <a href="#" class="btn btn--white">Book now!</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="section-book" id="contact">
