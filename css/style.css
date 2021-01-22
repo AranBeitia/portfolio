@@ -1,3 +1,45 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Aran-portfolio";
+  src: url("fonts/Aran-portfolio.ttf?61p6f4") format("truetype"), url("fonts/Aran-portfolio.woff?61p6f4") format("woff"), url("fonts/Aran-portfolio.svg?61p6f4#Aran-portfolio") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block; }
+
+[class^="aran-icon-"], [class*=" aran-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "Aran-portfolio" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.aran-icon-envelope-solid:before {
+  content: ""; }
+
+.aran-icon-eye-regular:before {
+  content: ""; }
+
+.aran-icon-github-alt-brands:before {
+  content: ""; }
+
+.aran-icon-laptop-code-solid:before {
+  content: ""; }
+
+.aran-icon-linkedin-in-brands:before {
+  content: ""; }
+
+.aran-icon-pen-fancy-solid:before {
+  content: ""; }
+
+.aran-icon-twitter-brands:before {
+  content: ""; }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -21,6 +63,9 @@
   @media screen and (max-width: 1023px) {
     .u-margin-top-big {
       margin-top: 5rem; } }
+
+.margin-tb-1 {
+  margin: 1rem 0; }
 
 /* basic reset */
 *,
@@ -376,43 +421,6 @@ body {
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.9); }
 
-.form__group:not(:last-child) {
-  margin-bottom: 2rem; }
-
-.form__input {
-  font-size: 1.5rem;
-  font-family: inherit;
-  padding: 1.5rem 2rem;
-  border-radius: 2px;
-  background-color: rgba(255, 255, 255, 0.5);
-  border: none;
-  border-bottom: transparent;
-  width: 90%;
-  display: block;
-  color: inherit;
-  transition: all .3s; }
-  .form__input:focus {
-    outline: 0;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-    border-bottom: 3px solid #ae6aa9; }
-    .form__input:focus:invalid {
-      border-bottom: 3px solid #9f0000; }
-  .form__input::-webkit-input-placeholder {
-    color: #999; }
-
-.form__label {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-left: 2rem;
-  margin-top: .7rem;
-  display: block;
-  transition: all .3s; }
-
-.form__input:placeholder-shown + .form__label {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-4rem); }
-
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
@@ -462,8 +470,7 @@ body {
         margin-bottom: 6rem; } }
   @media screen and (max-width: 1023px) {
     .row {
-      max-width: 50rem;
-      padding: 0 3rem; } }
+      padding: 0 2rem; } }
   .row::after {
     content: '';
     display: table;
@@ -713,7 +720,7 @@ body {
       padding: 5rem 0; } }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/hero2.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/contactBg.jpg);
   background-size: 100%;
   background-position: center;
   height: 50rem;
@@ -721,7 +728,7 @@ body {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
   @media screen and (max-width: 599px) {
     .book {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/hero2.jpg);
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/contactBg.jpg);
       background-size: cover; } }
   .book__form {
     width: 50%;
@@ -729,3 +736,27 @@ body {
     @media screen and (max-width: 599px) {
       .book__form {
         width: 65%; } }
+  .book__link {
+    display: block;
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    color: #7f2885; }
+    @media screen and (max-width: 599px) {
+      .book__link {
+        font-size: 1.5rem; } }
+  .book__icon {
+    padding-right: 1.5rem; }
+
+.social-media__list {
+  list-style: none; }
+
+.social-media__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1rem 0; }
+
+.social-media__icon {
+  font-size: 2rem;
+  padding-right: 1.5rem;
+  color: #7f2885; }
