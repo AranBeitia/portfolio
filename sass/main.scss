@@ -1,36 +1,60 @@
-@import 'abstracts/functions';
+@import "base/reset";
+
+@import "tokens/tokens";
+
 @import 'abstracts/mixins';
 @import 'abstracts/mixins.flexbox';
-@import 'abstracts/variables';
+@import 'abstracts/mixins.responsive';
+@import 'abstracts/mixins.grid';
+@import 'abstracts/animations';
 
 @import 'icons/icons';
 
-@import 'utilities/utilities';
+@import "base/typography";
+@import "base/default";
+@import "base/headings";
 
-@import 'base/base';
-
-@import 'components/button';
-@import 'components/card';
-@import 'components/composition';
-@import 'components/feature-box';
-@import 'components/story';
+// @import "components/avatar";
+// @import "components/badge";
+@import "components/button";
+// @import "components/cover";
+// @import "components/dimmer";
+// @import "components/drawer";
+// @import "components/header";
+// @import "components/heading";
+@import "components/card";
+// @import "components/nav";
+// @import "components/breadcrumb";
+@import "components/gallery"; 
+// @import "components/loading";
+// @import "components/menu";
+// @import "components/modal";
+// @import "components/icon";
+// @import "components/form";
+// @import "components/link";
+// @import "components/list";
+// @import "components/paginate";
+// @import "components/toolbar";
+// @import "components/footer";
+// @import "components/slider";
+// @import "components/table";
+// @import "components/timeline";
+// @import "components/tooltip";
+// @import "components/tab";
+// @import "components/theme";
 
 @import 'layout/grid';
 @import 'layout/navigation';
-@import 'layout/header';
+@import 'layout/hero';
+@import 'layout/section';
 @import 'layout/footer';
 
-@import 'pages/home';
+// @import "styling/blend";
+// @import "styling/color";
+// @import "styling/filters";
+// @import "styling/shapes";
+// @import "styling/background";
 
-/*
-1.Reorganize sass files: variables, add mixins (typography)
-2.Rename classes and vars
-3.Box shadow mixin
-4.mixin absolute-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-*/
+@import "utilities/utilities";
+//@import "utilities/sizing";
+@import "utilities/utilities.spacing";

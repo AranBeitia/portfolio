@@ -59,3 +59,20 @@
     width: calc(3 * ((100% -  3 * #{$gutter-horizontal}) / 4) + 2 * #{$gutter-horizontal});
   }
 }
+
+
+/* grid layout*/ 
+%grid {
+  display: grid;
+  grid-gap: 5rem;
+}
+
+.grid-2-to-1 {
+  @extend %grid;
+  @include columns-repeat-auto();
+}
+
+.grid-3-to-1 {
+  @extend %grid;
+  grid-template-columns: repeat(3, 1fr);
+}

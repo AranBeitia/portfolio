@@ -1,0 +1,3 @@
+@mixin columns-repeat-auto ($mode: auto-fit, $min: 25rem) {
+  grid-template-columns: repeat(auto-fit, minmax($min, 1fr)) !important;
+}

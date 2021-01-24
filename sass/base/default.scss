@@ -1,13 +1,3 @@
-/* basic reset */
-
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
 html {
   //this defines what 1rem is
   font-size: 62.5%;
@@ -22,11 +12,12 @@ body {
   }
 }
 
+@at-root ul#{&} {
+  list-style: none;
+  padding-left: 0;
+}
+
 ::selection {
   background-color: $color-primary;
   color: $color-white;
 }
-
-@import 'animations';
-@import 'typography';
-@import 'headings';

@@ -1,10 +1,18 @@
-.section-grey {
-  padding: 25rem 0;
-  margin-top: -25vh;
+.section-light {
   background-color: $color-grey-light;
 
-  @include is-tablet-landscape {
-    padding: 15rem 0;
+  &.--low {
+    padding: 25rem 0;
+    margin-top: -25vh;
+  }
+
+  &.--high {
+    padding: 18rem 0 8rem 0;
+    margin-top: -10rem;
+
+    @include is-tablet-landscape {
+        padding: 15rem 0 5rem 0;
+    }
   }
 }
 
@@ -28,17 +36,7 @@
   }
 }
 
-// .section-tours {
-//   padding-top: 20rem;
-//   margin-top: -10vh;
-
-//   @include is-tablet-landscape {
-//     padding-top: 10rem;
-//   }
-// }
-
-//contact
-.section-book {
+.section-contact {
   padding: 10rem 0;
   background-image: linear-gradient(
     to right bottom,

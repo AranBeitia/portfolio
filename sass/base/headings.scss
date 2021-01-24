@@ -52,6 +52,12 @@
   text-transform: uppercase;
 }
 
+.subtitle {
+  margin-top: 1rem;
+  font-weight: $font-weight-semi-bold;
+  color: $color-primary;
+}
+
 .paragraph {
   &:not(:last-child) {
     margin-bottom: 1.5rem;
