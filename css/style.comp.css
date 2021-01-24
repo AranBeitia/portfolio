@@ -1,3 +1,45 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Aran-portfolio";
+  src: url("fonts/Aran-portfolio.ttf?61p6f4") format("truetype"), url("fonts/Aran-portfolio.woff?61p6f4") format("woff"), url("fonts/Aran-portfolio.svg?61p6f4#Aran-portfolio") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block; }
+
+[class^="aran-icon-"], [class*=" aran-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "Aran-portfolio" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.aran-icon-envelope-solid:before {
+  content: ""; }
+
+.aran-icon-eye-regular:before {
+  content: ""; }
+
+.aran-icon-github-alt-brands:before {
+  content: ""; }
+
+.aran-icon-laptop-code-solid:before {
+  content: ""; }
+
+.aran-icon-linkedin-in-brands:before {
+  content: ""; }
+
+.aran-icon-pen-fancy-solid:before {
+  content: ""; }
+
+.aran-icon-twitter-brands:before {
+  content: ""; }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -21,6 +63,9 @@
   @media screen and (max-width: 1023px) {
     .u-margin-top-big {
       margin-top: 5rem; } }
+
+.margin-tb-1 {
+  margin: 1rem 0; }
 
 /* basic reset */
 *,
@@ -235,11 +280,21 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #ffd1fb, #7f2885), url(../img/nat-5.jpg); }
+      background-image: linear-gradient(to right bottom, #ffd1fb, #7f2885), url(../img/web/axaHealthkeeper.png); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #99e688, #1d6d0c), url(../img/nat-6.jpg); }
+      background-image: linear-gradient(to right bottom, #99e688, #1d6d0c), url(../img/web/myEasySante.png); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/nat-7.jpg); }
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/web/dtw.png); }
+    .card__picture--4 {
+      background-image: linear-gradient(to right bottom, #ffd1fb, #7f2885), url(../img/web/veInteractive.png); }
+    .card__picture--5 {
+      background-image: linear-gradient(to right bottom, #99e688, #1d6d0c), url(../img/web/Novocal.jpg); }
+    .card__picture--6 {
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/web/SurePlanet.png); }
+    .card__picture--7 {
+      background-image: linear-gradient(to right bottom, #ffd1fb, #7f2885), url(../img/web/metaposta.png); }
+    .card__picture--8 {
+      background-image: linear-gradient(to right bottom, #99e688, #1d6d0c), url(../img/web/miConvenio.png); }
   .card__heading {
     position: absolute;
     top: 12rem;
@@ -366,43 +421,6 @@ body {
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.9); }
 
-.form__group:not(:last-child) {
-  margin-bottom: 2rem; }
-
-.form__input {
-  font-size: 1.5rem;
-  font-family: inherit;
-  padding: 1.5rem 2rem;
-  border-radius: 2px;
-  background-color: rgba(255, 255, 255, 0.5);
-  border: none;
-  border-bottom: transparent;
-  width: 90%;
-  display: block;
-  color: inherit;
-  transition: all .3s; }
-  .form__input:focus {
-    outline: 0;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-    border-bottom: 3px solid #ae6aa9; }
-    .form__input:focus:invalid {
-      border-bottom: 3px solid #9f0000; }
-  .form__input::-webkit-input-placeholder {
-    color: #999; }
-
-.form__label {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-left: 2rem;
-  margin-top: .7rem;
-  display: block;
-  transition: all .3s; }
-
-.form__input:placeholder-shown + .form__label {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-4rem); }
-
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
@@ -452,8 +470,7 @@ body {
         margin-bottom: 6rem; } }
   @media screen and (max-width: 1023px) {
     .row {
-      max-width: 50rem;
-      padding: 0 3rem; } }
+      padding: 0 2rem; } }
   .row::after {
     content: '';
     display: table;
@@ -530,6 +547,7 @@ body {
   height: 100vh;
   z-index: 3;
   opacity: 0;
+  visibility: hidden;
   width: 0;
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
 
@@ -567,6 +585,7 @@ body {
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
+  visibility: visible;
   width: 100%; }
 
 .navigation__icon {
@@ -605,14 +624,14 @@ body {
 
 .header {
   position: relative;
-  height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(174, 106, 169, 0.8), rgba(127, 40, 133, 0.8)), url(../img/hero-small.jpg);
   background-size: cover;
   background-position: top; }
-  @supports (clip-path: poliyon(0, 0)) or (-webkit-clip-path: poliyon(0, 0)) {
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     .header {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); } }
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+      height: 95vh; } }
   @media (min-resolution: 192dpi) and (min-width: 600px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 600px), (min-width: 2000px) {
     .header {
       background-image: linear-gradient(to right bottom, rgba(174, 106, 169, 0.8), rgba(127, 40, 133, 0.8)), url(../img/hero.jpg); } }
@@ -638,111 +657,108 @@ body {
     text-align: center; }
 
 .footer {
-  background-color: #333;
-  padding: 10rem 0;
-  font-size: 1.4rem; }
-  @media screen and (max-width: 1023px) {
-    .footer {
-      padding: 5rem 0; } }
-  .footer__logo-box {
-    text-align: center;
-    margin-bottom: 8rem; }
-    @media screen and (max-width: 1023px) {
-      .footer__logo-box {
-        margin-bottom: 4rem; } }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: #333; }
   .footer__logo {
-    width: 150px; }
-  .footer__navigation {
-    border-top: 1px solid #777;
-    padding-top: 1.2rem;
-    display: inline-block; }
-    @media screen and (max-width: 1023px) {
-      .footer__navigation {
-        width: 100%;
-        text-align: center; } }
-  .footer__list {
-    list-style: none; }
-  .footer__item {
-    display: inline-block; }
-    .footer__item:not(:last-child) {
-      margin-right: 1.5rem; }
+    width: 70px; }
+  .footer__copyright {
+    color: #fff; }
   .footer__link:link, .footer__link:visited {
-    color: #f7f7f7;
-    background-color: #333;
+    display: inline-block;
+    padding-left: 1rem;
     text-decoration: none;
     text-transform: uppercase;
-    display: inline-block;
+    color: #f7f7f7;
+    background-color: #333;
     transition: all .2s; }
   .footer__link:hover, .footer__link:active {
     color: #ae6aa9;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
     transform: rotate(5deg) scale(1.3); }
-  .footer__copyright {
-    border-top: 1px solid #777;
-    padding-top: 1.2rem;
-    width: 80%;
-    float: right; }
-    @media screen and (max-width: 1023px) {
-      .footer__copyright {
-        width: 100%;
-        float: none; } }
 
-.section-about {
-  background-color: #f7f7f7;
+.section-grey {
   padding: 25rem 0;
-  margin-top: -25vh; }
+  margin-top: -25vh;
+  background-color: #f7f7f7; }
   @media screen and (max-width: 1023px) {
-    .section-about {
+    .section-grey {
       padding: 15rem 0; } }
 
-.section-features {
-  padding: 20rem 0;
+.section-skills {
+  padding: 10rem 0;
   background-image: linear-gradient(to right bottom, rgba(174, 106, 169, 0.8), rgba(127, 40, 133, 0.8)), url(../img/web.jpg);
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -10rem; }
-  .section-features > * {
+  .section-skills > * {
     transform: skewY(7deg); }
   @media screen and (max-width: 1023px) {
-    .section-features {
+    .section-skills {
       padding: 10rem 0; } }
 
-.section-tours {
-  background-color: #f7f7f7;
-  padding-top: 20rem;
-  margin-top: -10vh; }
-  @media screen and (max-width: 1023px) {
-    .section-tours {
-      padding-top: 10rem; } }
-
-.section-stories {
-  padding: 15rem 0;
-  background-color: #f7f7f7; }
-  @media screen and (max-width: 1023px) {
-    .section-stories {
-      padding: 5rem 0; } }
-
 .section-book {
-  padding: 15rem 0;
+  padding: 10rem 0;
   background-image: linear-gradient(to right bottom, #ffd1fb, #7f2885); }
   @media screen and (max-width: 1023px) {
     .section-book {
       padding: 5rem 0; } }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/hero2.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/contactBg.jpg);
   background-size: 100%;
   background-position: center;
-  height: 50rem;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
+  @media screen and (max-width: 1023px) {
+    .book {
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/contactBg.jpg);
+      background-size: cover; } }
   @media screen and (max-width: 599px) {
     .book {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/hero2.jpg);
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/contactBg.jpg);
       background-size: cover; } }
   .book__form {
-    width: 50%;
     padding: 6rem; }
     @media screen and (max-width: 599px) {
       .book__form {
-        width: 65%; } }
+        width: auto; } }
+  .book__link {
+    display: block;
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    color: #7f2885; }
+    @media screen and (max-width: 599px) {
+      .book__link {
+        font-size: 1.5rem; } }
+  .book__icon {
+    padding-right: 1.5rem; }
+
+.social-media__list {
+  list-style: none; }
+
+.social-media__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1rem 0; }
+
+.social-media__icon {
+  font-size: 2rem;
+  padding-right: 1.5rem;
+  color: #7f2885; }
+
+/*
+1.Reorganize sass files: variables, add mixins (typography)
+2.Rename classes and vars
+3.Box shadow mixin
+4.mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+*/
