@@ -1,7 +1,9 @@
 # npm run compile
 ```sh
 npm run serve
-npm run build:css
 ```
 
-# my-poc
+# npm run build
+```sh
+npm run build:css
+```
