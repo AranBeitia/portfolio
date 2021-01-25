@@ -33,4 +33,9 @@
 .u-padding-10 {
   padding-left: 10rem !important;
   padding-right: 10rem !important;
+
+  @include is-mobile {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
 }
