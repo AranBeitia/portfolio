@@ -1,5 +1,10 @@
-// const data = document.getElementById('cta')
-// data.addEventListener('click', renderPortfolio())
+const funcionNueva = (event) => {
+  event.target.getAttribute('data-prueba')
+  console.log(event.target.getAttribute('data-prueba'))
+}
+
+const data = document.getElementById('2')
+data.addEventListener('click', funcionNueva)
 
 document.addEventListener('DOMContentLoaded', () => {
   renderPortfolio()
@@ -18,7 +23,7 @@ const renderPortfolio = async (id) => {
   let html = ''
   datos.forEach(dato => {
     html = `
-      <img src="${dato.imgUrl}" alt="${dato.title}" class="modal__image" id="${dato.id}">
+      <img src="${dato.imgUrl}" alt="${dato.title}" class="modal__image">
     `
   })
   document.getElementById('modali').innerHTML = html
