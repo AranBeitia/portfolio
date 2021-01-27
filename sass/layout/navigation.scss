@@ -1,13 +1,7 @@
 .navigation {
-  &__checkbox {
-    display: none;
-  }
-
   &__button {
     position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(flex, center, center);
     top: 6rem;
     right: 6rem;
     height: 7rem;
@@ -17,6 +11,7 @@
     box-shadow: 0 1rem 3rem rgba($color-black, .1);
     z-index: 4;
     cursor: pointer;
+    outline: none;
 
     @include is-mobile {
       width: 5rem;
@@ -37,6 +32,10 @@
     z-index: 2;
     transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
 
+    &.--visible {
+      transform: scale(80);
+    }
+
     @include is-mobile {
       width: 4.5rem;
       height: 4.5rem;
@@ -55,6 +54,12 @@
     visibility: hidden;
     width: 0;
     transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    &.--visible {
+      opacity: 1;
+      visibility: visible;
+      width: 100%;
+    }
   }
 
   &__list {
@@ -65,10 +70,6 @@
     list-style: none;
     text-align: center;
     width: 100%;
-  }
-
-  &__item {
-    margin: 1rem;
   }
 
   &__link {
@@ -92,16 +93,6 @@
       color: $color-primary;
       transform: translateX(1rem);
     }
-  }
-
-  &__checkbox:checked ~ &__background {
-    transform: scale(80);
-  }
-
-    &__checkbox:checked ~ &__nav {
-    opacity: 1;
-    visibility: visible;
-    width: 100%;
   }
 
   &__icon {
@@ -136,17 +127,17 @@
     top: 1rem;
   }
 
-  &__checkbox:checked + &__button &__icon {
-    background-color: transparent;
-  }
+  // &__checkbox:checked + &__button &__icon {
+  //   background-color: transparent;
+  // }
 
-  &__checkbox:checked + &__button &__icon::before {
-    top: 0;
-    transform: rotate(135deg);
-  }
+  // &__checkbox:checked + &__button &__icon::before {
+  //   top: 0;
+  //   transform: rotate(135deg);
+  // }
 
-  &__checkbox:checked + &__button &__icon::after {
-    top: 0;
-    transform: rotate(-135deg);
-  }
+  // &__checkbox:checked + &__button &__icon::after {
+  //   top: 0;
+  //   transform: rotate(-135deg);
+  // }
 }

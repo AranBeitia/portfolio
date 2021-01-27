@@ -28,3 +28,7 @@ const renderPortfolio = async (id) => {
   })
   document.getElementById('modali').innerHTML = html
 }
+
+export default {
+  funcionNueva
+}
