@@ -8,28 +8,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/scrollnav@3.0.1/dist/scrollnav.min.umd.js"></script>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/nav.js" defer></script>
 
   <link rel="shortcut icon" type="image/png" href="favicon.png">
   <title>Arantza Beitia</title>
 </head>
 
 <body>
-  <div class="navigation">
-    <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
-    <label for="nav-toggle" class="navigation__button" onClick="click" id="toggle">
+  <nav class="navigation">
+    <button class="navigation__button">
       <span class="navigation__icon"></span>
-    </label>
+    </button>
+
     <div class="navigation__background"></div>
-    <nav class="navigation__nav">
+    <div class="navigation__nav">
       <ul class="navigation__list">
-        <li class="navigation__item"><a href="#intro" class="navigation__link">Hello</a></li>
-        <li class="navigation__item"><a href="#about" class="navigation__link">Sobre mí</a></li>
-        <li class="navigation__item"><a href="#skills" class="navigation__link">Skills</a></li>
-        <li class="navigation__item"><a href="#portfolio" class="navigation__link">Portfolio</a></li>
-        <li class="navigation__item"><a href="#contact" class="navigation__link">Contacto</a></li>
+        <li>
+          <a href="#intro" class="navigation__link">Hello</a>
+        </li>
+        <li><a href="#about" class="navigation__link">Sobre mí</a></li>
+        <li><a href="#skills" class="navigation__link">Skills</a></li>
+        <li><a href="#portfolio" class="navigation__link">Portfolio</a></li>
+        <li><a href="#contact" class="navigation__link">Contacto</a></li>
       </ul>
-    </nav>
-  </div>
+    </div>
+  </nav>
 
   <header class="header" id="intro">
     <div class="header__logo-box">
@@ -49,26 +52,30 @@
         <h2 class="heading-secondary">Un poco sobre mí</h2>
       </div>
       <div class="page-container">
-        <div class="col-1-of-2">
-          <h3 class="heading-tertiary u-margin-bottom-small">Codifico interfaces maravillosamente simples, y me encanta
-            lo que hago.</h3>
-          <p class="paragraph">Desde que comencé hace 10 años, he trabajado para consultoras, para nuevas empresas, como
-            freelancer e incluso para talleres de nuevas tecnologías para niños. He colaborado en el desarrollo
-            de productos digitales para uso comercial y de consumo, y para producto propio tanto en trabajos
-            de desarrollo front end, gestión de contenidos, posicionamiento y tareas de diseño gráfico.</p>
-        </div>
-        <div class="col-1-of-2">
-          <div class="composition">
-            <img srcset="img/me-1.jpg 300w, img/me-1-large.jpg 1000w"
-              sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
-              class="composition__photo composition__photo--p1" alt="Photo 1" src="img/me-1-large.jpg">
-            <img srcset="img/me-2.jpg 300w, img/me-2-large.jpg 1000w"
-              sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
-              class="composition__photo composition__photo--p2" alt="Photo 2" src="img/me-2-large.jpg">
-            <img srcset="img/me-3.jpg 300w, img/me-3-large.jpg 1000w"
-              sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
-              class="composition__photo composition__photo--p3" alt="Photo 3" src="img/me-3-large.jpg">
-          </div>
+        <div class="grid-2-to-1">
+          <section>
+            <h3 class="heading-tertiary u-margin-bottom-small">Codifico interfaces maravillosamente simples, y me
+              encanta
+              lo que hago.</h3>
+            <p class="paragraph">Desde que comencé hace 10 años, he trabajado para consultoras, para nuevas empresas,
+              como
+              freelancer e incluso para talleres de nuevas tecnologías para niños. He colaborado en el desarrollo
+              de productos digitales para uso comercial y de consumo, y para producto propio tanto en trabajos
+              de desarrollo front end, gestión de contenidos, posicionamiento y tareas de diseño gráfico.</p>
+          </section>
+          <section>
+            <div class="composition">
+              <img srcset="img/me-1.jpg 300w, img/me-1-large.jpg 1000w"
+                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                class="composition__photo composition__photo--p1" alt="Photo 1" src="img/me-1-large.jpg">
+              <img srcset="img/me-2.jpg 300w, img/me-2-large.jpg 1000w"
+                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                class="composition__photo composition__photo--p2" alt="Photo 2" src="img/me-2-large.jpg">
+              <img srcset="img/me-3.jpg 300w, img/me-3-large.jpg 1000w"
+                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                class="composition__photo composition__photo--p3" alt="Photo 3" src="img/me-3-large.jpg">
+            </div>
+          </section>
         </div>
       </div>
     </section>
@@ -115,7 +122,7 @@
         <p>Algunos de los proyectos de los que he formado parte recientemente.</p>
       </div>
       <div class="page-container">
-        <div class="col-1-of-3">
+        <div class="grid-3-to-1">
           <div class="card">
             <div class="[ card__side card__side--front ]">
               <div class="[ card__picture card__picture--1 ]">
@@ -133,8 +140,6 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-1-of-3">
           <div class="card">
             <div class="[ card__side card__side--front ]">
               <div class="[ card__picture card__picture--2 ]">
@@ -152,8 +157,6 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-1-of-3">
           <div class="card">
             <div class="[ card__side card__side--front ]">
               <div class="[ card__picture card__picture--3 ]">
@@ -171,13 +174,9 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- <div class="u-center-text u-margin-top-big">
+          <!-- <div class="u-center-text u-margin-top-big">
         <a href="#" class="btn btn--magenta">Ver más</a>
       </div> -->
-      <div class="page-container">
-        <div class="col-1-of-3">
           <div class="card">
             <div class="[ card__side card__side--front ]">
               <div class="[ card__picture card__picture--4 ]">
@@ -196,8 +195,6 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-1-of-3">
           <div class="card">
             <div class="[ card__side card__side--front ]">
               <div class="[ card__picture card__picture--5 ]">
@@ -216,8 +213,6 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-1-of-3">
           <div class="card">
             <div class="[ card__side card__side--front ]">
               <div class="[ card__picture card__picture--6 ]">
@@ -234,10 +229,6 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-1-of-3">
           <div class="card">
             <div class="[ card__side card__side--front ]">
               <div class="[ card__picture card__picture--7 ]">
@@ -255,8 +246,6 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-1-of-3">
           <div class="card">
             <div class="[ card__side card__side--front ]">
               <div class="[ card__picture card__picture--8 ]">
