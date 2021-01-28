@@ -15,7 +15,6 @@
 </head>
 
 <body>
-
   <nav class="navigation">
     <button class="navigation__button">
       <span class="navigation__icon"></span>
@@ -47,32 +46,36 @@
       <a href="#" class="[ btn btn--white btn--animated ]">abajo</a>
     </div>
   </header>
-  <main class="main-content">
+  <main class="">
     <section class="section-light --low" id="about">
       <div class="u-center-text u-margin-bottom-big">
         <h2 class="heading-secondary">Un poco sobre mí</h2>
       </div>
-      <div class="row">
-        <div class="col-1-of-2">
-          <h3 class="heading-tertiary u-margin-bottom-small">Codifico interfaces maravillosamente simples, y me encanta
-            lo que hago.</h3>
-          <p class="paragraph">Desde que comencé hace 10 años, he trabajado para consultoras, para nuevas empresas, como
-            freelancer e incluso para talleres de nuevas tecnologías para niños. He colaborado en el desarrollo
-            de productos digitales para uso comercial y de consumo, y para producto propio tanto en trabajos
-            de desarrollo front end, gestión de contenidos, posicionamiento y tareas de diseño gráfico.</p>
-        </div>
-        <div class="col-1-of-2">
-          <div class="composition">
-            <img srcset="img/me-1.jpg 300w, img/me-1-large.jpg 1000w"
-              sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
-              class="composition__photo composition__photo--p1" alt="Photo 1" src="img/me-1-large.jpg">
-            <img srcset="img/me-2.jpg 300w, img/me-2-large.jpg 1000w"
-              sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
-              class="composition__photo composition__photo--p2" alt="Photo 2" src="img/me-2-large.jpg">
-            <img srcset="img/me-3.jpg 300w, img/me-3-large.jpg 1000w"
-              sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
-              class="composition__photo composition__photo--p3" alt="Photo 3" src="img/me-3-large.jpg">
-          </div>
+      <div class="page-container">
+        <div class="grid-2-to-1">
+          <section>
+            <h3 class="heading-tertiary u-margin-bottom-small">Codifico interfaces maravillosamente simples, y me
+              encanta
+              lo que hago.</h3>
+            <p class="paragraph">Desde que comencé hace 10 años, he trabajado para consultoras, para nuevas empresas,
+              como
+              freelancer e incluso para talleres de nuevas tecnologías para niños. He colaborado en el desarrollo
+              de productos digitales para uso comercial y de consumo, y para producto propio tanto en trabajos
+              de desarrollo front end, gestión de contenidos, posicionamiento y tareas de diseño gráfico.</p>
+          </section>
+          <section>
+            <div class="composition">
+              <img srcset="img/me-1.jpg 300w, img/me-1-large.jpg 1000w"
+                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                class="composition__photo composition__photo--p1" alt="Photo 1" src="img/me-1-large.jpg">
+              <img srcset="img/me-2.jpg 300w, img/me-2-large.jpg 1000w"
+                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                class="composition__photo composition__photo--p2" alt="Photo 2" src="img/me-2-large.jpg">
+              <img srcset="img/me-3.jpg 300w, img/me-3-large.jpg 1000w"
+                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                class="composition__photo composition__photo--p3" alt="Photo 3" src="img/me-3-large.jpg">
+            </div>
+          </section>
         </div>
       </div>
     </section>
@@ -80,7 +83,7 @@
       <div class="u-center-text u-margin-bottom-big">
         <h2 class="heading-secondary">Skills</h2>
       </div>
-      <div class="grid-2-to-1 u-padding-10">
+      <div class="grid-2-to-1 page-container">
         <div class="feature-box">
           <i class="feature-box__icon aran-icon-laptop-code-solid"></i>
           <h3 class="heading-tertiary u-margin-bottom-small">Front end</h3>
@@ -118,8 +121,8 @@
         <h2 class="heading-secondary">Ultimos trabajos</h2>
         <p>Algunos de los proyectos de los que he formado parte recientemente.</p>
       </div>
-      <div class="row">
-        <div class="col-1-of-3">
+      <div class="page-container">
+        <div class="grid-3-to-1">
           <div class="card">
             <div class="[ card__side card__side--front ]">
               <div class="[ card__picture card__picture--1 ]">
@@ -133,12 +136,10 @@
                 Axa Healthkeeper, implementación de diseños a demanda sin frameworks, desarrollado en AngularJS.
               </p>
               <div class="card__cta">
-                <a href="#gallery" class="btn btn--white" id="1">Ver</a>
+                <a href="#" class="btn btn--white">Ver</a>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-1-of-3">
           <div class="card">
             <div class="[ card__side card__side--front ]">
               <div class="[ card__picture card__picture--2 ]">
@@ -152,12 +153,10 @@
                 Axa Healthkeeper, implementación de diseños a demanda sin frameworks, desarrollado en VueJS.
               </p>
               <div class="card__cta">
-                <a href="#gallery" class="btn btn--white" data-prueba="esto es pruebaaa" id="2">Ver</a>
+                <a href="#" class="btn btn--white">Ver</a>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-1-of-3">
           <div class="card">
             <div class="[ card__side card__side--front ]">
               <div class="[ card__picture card__picture--3 ]">
@@ -171,17 +170,13 @@
                 evento tecnológico promovido por Ve Interactive. Diseño del logotipo.
               </p>
               <div class="card__cta">
-                <a href="#gallery" class="btn btn--white" data-algo="" id="3">Ver</a>
+                <a href="#" class="btn btn--white">Ver</a>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- <div class="u-center-text u-margin-top-big">
+          <!-- <div class="u-center-text u-margin-top-big">
         <a href="#" class="btn btn--magenta">Ver más</a>
       </div> -->
-      <div class="row">
-        <div class="col-1-of-3">
           <div class="card">
             <div class="[ card__side card__side--front ]">
               <div class="[ card__picture card__picture--4 ]">
@@ -200,8 +195,6 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-1-of-3">
           <div class="card">
             <div class="[ card__side card__side--front ]">
               <div class="[ card__picture card__picture--5 ]">
@@ -220,8 +213,6 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-1-of-3">
           <div class="card">
             <div class="[ card__side card__side--front ]">
               <div class="[ card__picture card__picture--6 ]">
@@ -238,10 +229,6 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-1-of-3">
           <div class="card">
             <div class="[ card__side card__side--front ]">
               <div class="[ card__picture card__picture--7 ]">
@@ -259,8 +246,6 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-1-of-3">
           <div class="card">
             <div class="[ card__side card__side--front ]">
               <div class="[ card__picture card__picture--8 ]">
@@ -283,7 +268,7 @@
     </section>
 
     <section class="section-contact" id="contact">
-      <div class="row">
+      <div class="page-container">
         <div class="book">
           <div class="book__form">
             <h2 class="heading-secondary">Contacto</h2>
@@ -308,14 +293,6 @@
     <img src="img/logo.svg" alt="Logo" class="footer__logo">
     <p class="footer__copyright">&copy; 2021 <a href="#intro" class="footer__link">Arantza Beitia</a></p>
   </footer>
-
-  <div class="modal" id="gallery">
-    <div class="modal__content">
-      <a href="#portfolio" class="modal__close">&times;</a>
-      <div id="modali"></div>
-    </div>
-  </div>
-
 </body>
 
 </html>
