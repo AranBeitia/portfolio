@@ -2,6 +2,18 @@
   max-width: var(--grid-width);
   width: 100%;
   margin: 0 auto;
+
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+
+    @include is-tablet-landscape {
+      margin-bottom: $gutter-vertical-small;
+    }
+  }
+
+  @include is-tablet-landscape {
+    padding: 0 2rem;
+  }
 }
 
 .section-light {
