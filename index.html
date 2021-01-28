@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/scrollnav@3.0.1/dist/scrollnav.min.umd.js"></script>
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/app.js" defer></script>
+  <script src="js/nav.js" defer></script>
 
   <link rel="shortcut icon" type="image/png" href="favicon.png">
   <title>Arantza Beitia</title>
@@ -16,22 +16,24 @@
 
 <body>
 
-  <div class="navigation">
-    <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
-    <label for="nav-toggle" class="navigation__button" onClick="click" id="toggle">
+  <nav class="navigation">
+    <button class="navigation__button">
       <span class="navigation__icon"></span>
-    </label>
+    </button>
+
     <div class="navigation__background"></div>
-    <nav class="navigation__nav">
+    <div class="navigation__nav">
       <ul class="navigation__list">
-        <li class="navigation__item"><a href="#intro" class="navigation__link">Hello</a></li>
-        <li class="navigation__item"><a href="#about" class="navigation__link">Sobre mí</a></li>
-        <li class="navigation__item"><a href="#skills" class="navigation__link">Skills</a></li>
-        <li class="navigation__item"><a href="#portfolio" class="navigation__link">Portfolio</a></li>
-        <li class="navigation__item"><a href="#contact" class="navigation__link">Contacto</a></li>
+        <li>
+          <a href="#intro" class="navigation__link">Hello</a>
+        </li>
+        <li><a href="#about" class="navigation__link">Sobre mí</a></li>
+        <li><a href="#skills" class="navigation__link">Skills</a></li>
+        <li><a href="#portfolio" class="navigation__link">Portfolio</a></li>
+        <li><a href="#contact" class="navigation__link">Contacto</a></li>
       </ul>
-    </nav>
-  </div>
+    </div>
+  </nav>
 
   <header class="header" id="intro">
     <div class="header__logo-box">
@@ -313,6 +315,7 @@
       <div id="modali"></div>
     </div>
   </div>
+
 </body>
 
 </html>
