@@ -1,7 +1,5 @@
 .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex(flex, between, center)
   padding: 2rem;
   background-color: $color-grey-darker;
 
