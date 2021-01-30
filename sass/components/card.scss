@@ -158,9 +158,7 @@
   }
 
   &__cta {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(flex,center,center);
   }
 
 
@@ -173,9 +171,6 @@
       height: 20rem;
 
       &--back {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         margin-top: -5rem;
         transform: rotateY(0);
         clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
