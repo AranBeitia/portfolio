@@ -1,0 +1,16 @@
+$size: 4rem;
+
+.logo-container {
+  position: absolute;
+  top: $size;
+  left: $size;
+
+  @include is-mobile {
+    top: $size / 2;
+    left: $size / 2;
+  }
+}
+
+.logo {
+  height: 6.5rem;
+}

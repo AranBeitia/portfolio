@@ -2,7 +2,6 @@
 
 @import 'tokens/tokens';
 
-@import 'abstracts/mixins';
 @import 'abstracts/mixins.flexbox';
 @import 'abstracts/mixins.responsive';
 @import 'abstracts/mixins.grid';
@@ -20,17 +19,9 @@
 @import 'layout/section';
 @import 'layout/footer';
 
-// @import 'components/avatar';
-// @import 'components/badge';
+@import 'components/logo';
 @import 'components/button';
-// @import 'components/cover';
-// @import 'components/dimmer';
-// @import 'components/drawer';
-// @import 'components/header';
-// @import 'components/heading';
 @import 'components/card';
-// @import 'components/nav';
-// @import 'components/breadcrumb';
 @import 'components/gallery'; 
 // @import 'components/loading';
 // @import 'components/menu';

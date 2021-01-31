@@ -11,7 +11,7 @@
     }
   }
 
-  @include is-tablet-landscape {
+  @include is-desktop {
     padding: 0 2rem;
   }
 }
