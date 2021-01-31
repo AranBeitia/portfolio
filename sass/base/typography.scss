@@ -1,19 +1,110 @@
+/* Typography */
+$font-size-base: 16px;
+$font-size-base-mobile: 14px;
+
 $weights: (
+  thin: $font-weight-thin,
   light: $font-weight-light,
   regular: $font-weight-regular,
-  semi-bold: $font-weight-semi-bold,
   bold: $font-weight-bold,
+  black: $font-weight-black,
 );
 
+@mixin apply-text($text) {
+  font-size: nth($text, 1) !important;
+  line-height: nth($text, 2) !important;
+  font-weight: map_get($weights, nth($text, 3)) !important;
+}
 
 body {
-  font-family: 'Lato', sans-serif;
-  font-size: $default-font-size;
-  font-weight: light;
-  line-height: 1.7;
+  font-family: $asset-font-primary;
+  font-size: $font-size-base;
+  line-height: 28px;
   color: $color-grey;
 
-  @include is-tablet-landscape {
-    font-size: $font-size-sm;
+  @include is-mobile {
+    font-size: $font-size-base-mobile;
+    line-height: 1.2;
+  }
+}
+
+$page-texts: (
+  'huge': (
+    'desktop': (4.333rem 82px 'bold'),
+    'mobile': (2.66rem 52px 'bold'),
+  ),
+  'page': (
+    'desktop': (2.66rem 54px 'bold'),
+    'mobile': (32px 38px 'bold'),
+  ),
+);
+
+$heading-texts: (
+  'heading-main': (
+    'desktop': (80px 86px 'black'),
+    'mobile': (40px 46px 'black'),
+  ),
+  'heading-secondary': (
+    'desktop': (35px 40px 'bold'),
+    'mobile': (28px 34px 'bold'),
+  ),
+  'heading-tertiary': (
+    'desktop': (20px 26px 'bold'),
+    'mobile': (18px 24px 'bold'),
+  ),
+  'heading-fourth': (
+    'desktop': (28px 45px 'light'),
+    'mobile': (24px 40px 'light'),
+  ),
+);
+
+$body-texts: (
+  'body-main': (
+    'desktop': (18px 27px 'regular'),
+    'mobile': (16px 24px 'regular'),
+  ),
+  'body-main-bold': (
+    'desktop': (18px 27px 'bold'),
+    'mobile': (16px 24px 'bold'),
+  ),
+  'body-secondary': (
+    'desktop': (16px 24px 'regular'),
+    'mobile': (14px 21px 'regular'),
+  ),
+  'body-secondary-semi-bold': (
+    'desktop': (16px 24px 'bold'),
+    'mobile': (14px 21px 'bold'),
+  ),
+);
+
+$other-texts: (
+  'tag': (
+    'desktop': (14px 18px 'regular'),
+    'mobile': (13px 18px 'regular'),
+  ),
+);
+
+$texts: map-merge(
+  $page-texts,
+  map-merge(
+    $heading-texts,
+    map-merge(
+      $body-texts,
+      $other-texts
+    )
+  )
+);
+
+@each $text, $value  in $texts {
+  $text-desktop: map-get($value, 'desktop');
+  $text-mobile: map-get($value, 'mobile');
+
+  .text-#{$text},
+  %text-#{$text} {
+    @include apply-text($text-desktop);
+      
+    @include is-mobile {
+      @include apply-text($text-mobile);
+    }
   }
 }

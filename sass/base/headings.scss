@@ -1,3 +1,31 @@
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 1rem; // Vertical Rhythm
+  letter-spacing: normal;
+}
+
+h1 {
+  @extend .text-heading-main;
+}
+
+h2 {
+  @extend .text-heading-secondary;
+}
+
+h3 {
+  @extend .text-heading-tertiary;
+}
+
+h4,
+h5 {
+  @extend .text-heading-fourth;
+}
+
+h6 {
+  @extend .text-body-main-bold;
+}
+
 .heading-primary {
   color: $color-white;
   backface-visibility: hidden;
@@ -5,35 +33,21 @@
 
   &--main {
     display: block;
-    font-size: $font-size-title;
-    font-weight: $font-weight-regular;
-    line-height: 1.2;
     animation: moveInLeft 1s ease-out;
-
-    @include is-tablet-landscape {
-      font-size: $font-size-title - 3;
-    }
   }
 
   &--sub {
     display: block;
-    font-size: $font-size-header-2;
+    @extend .text-body-secondary;
     text-transform: uppercase;
     letter-spacing: .5rem;
     animation: moveInRight 1s ease-out;
-
-    @include is-mobile {
-      font-size: $font-size-header-2 - 2;
-      line-height: 1;
-    }
   }
 }
 
 .heading-secondary {
   display: inline-block;
-  font-size: 3.5rem;
   text-transform: uppercase;
-  font-weight: 700;
   background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
   -webkit-background-clip: text;
   color: transparent;
@@ -45,19 +59,12 @@
   }
 }
 
-.heading-tertiary {
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
 .subtitle {
   margin-top: 1rem;
-  font-weight: $font-weight-semi-bold;
+  font-weight: $font-weight-bold;
   color: $color-primary;
 }
 
-.paragraph {
-  &:not(:last-child) {
-    margin-bottom: 1.5rem;
-  }
+.uppercase {
+  text-transform: uppercase;
 }
