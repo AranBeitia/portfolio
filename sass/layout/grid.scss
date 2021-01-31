@@ -17,3 +17,8 @@
     grid-template-columns: 100%;
   }
 }
+
+.grid-auto-to-1 {
+  @extend %grid;
+  grid-template-columns: repeat( auto-fit, minmax(340px, 1fr) );
+}

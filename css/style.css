@@ -182,7 +182,7 @@ ul {
   margin-bottom: 1.5rem; }
 
 /* grid layout*/
-.grid-2-to-1, .grid-3-to-1 {
+.grid-2-to-1, .grid-3-to-1, .grid-auto-to-1 {
   display: grid;
   grid-gap: 5rem; }
 
@@ -194,6 +194,9 @@ ul {
   @media screen and (max-width: 599px) {
     .grid-3-to-1 {
       grid-template-columns: 100%; } }
+
+.grid-auto-to-1 {
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); }
 
 .navigation__button {
   position: fixed;
@@ -448,12 +451,12 @@ ul {
 .btn, .btn:link, .btn:visited {
   display: inline-block;
   position: relative;
+  padding: 1.5rem 4rem;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1.5rem 4rem;
   border-radius: 10rem;
-  transition: all .2s;
   border: none;
+  transition: all .2s;
   cursor: pointer; }
 
 .btn:hover {
@@ -496,23 +499,6 @@ ul {
   animation: moveInBottom .5s ease-out .75;
   animation-fill-mode: forwards; }
 
-.btn-text:link, .btn-text:visited {
-  display: inline-block;
-  color: #ae6aa9;
-  text-decoration: none;
-  border-bottom: 1px solid #ae6aa9;
-  padding: .3rem; }
-
-.btn-text:hover {
-  background-color: #ae6aa9;
-  color: #fff;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px); }
-
-.btn-text:active {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  transform: translateY(0); }
-
 .card {
   position: relative;
   perspective: 150rem;
@@ -544,17 +530,14 @@ ul {
   .card:hover .card__side--back {
     transform: rotateY(0); }
   .card__picture {
-    background-size: contain;
-    background-repeat: no-repeat;
     height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-blend-mode: screen;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-top-left-radius: 3px;
-    border-top-right-radius: 3px; }
-    @media screen and (max-width: 599px) {
-      .card__picture {
-        background-size: cover; } }
+    border-top-right-radius: 5px; }
     .card__picture--1 {
       background-image: url(../img/web/axaHealthkeeper.jpg); }
     .card__picture--2 {
@@ -603,7 +586,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center; }
-  @media screen and (max-width: 599px) {
+  @media screen and (max-width: 1023px) {
     .card {
       height: auto; }
       .card__side {
@@ -751,41 +734,6 @@ body {
       color: #7f2885; }
   .modal__image {
     width: 60%; }
-
-.u-center-text {
-  text-align: center !important; }
-
-.u-margin-bottom-small {
-  margin-bottom: 1rem !important; }
-
-.u-margin-bottom-medium {
-  margin-bottom: 4rem !important; }
-  @media screen and (max-width: 1023px) {
-    .u-margin-bottom-medium {
-      margin-bottom: 3rem; } }
-
-.u-margin-bottom-big {
-  margin-bottom: 8rem !important; }
-  @media screen and (max-width: 1023px) {
-    .u-margin-bottom-big {
-      margin-bottom: 5rem; } }
-
-.u-margin-top-big {
-  margin-top: 8rem !important; }
-  @media screen and (max-width: 1023px) {
-    .u-margin-top-big {
-      margin-top: 5rem; } }
-
-.margin-tb-1 {
-  margin: 1rem 0; }
-
-.u-padding-10 {
-  padding-left: 10rem !important;
-  padding-right: 10rem !important; }
-  @media screen and (max-width: 599px) {
-    .u-padding-10 {
-      padding-left: 1rem !important;
-      padding-right: 1rem !important; } }
 
 .u-center-text {
   text-align: center !important; }

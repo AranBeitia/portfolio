@@ -58,17 +58,13 @@
   //FRONT SIDE STYLING
   &__picture {
     height: 100%;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: screen;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-
-    @include is-mobile {
-      background-size: cover;
-    }
+    border-top-right-radius: 5px;
 
     &--1 {
       background-image: url(../img/web/axaHealthkeeper.jpg);
@@ -162,7 +158,7 @@
   }
 
 
-  @include is-mobile {
+  @include is-tablet-landscape {
     height: auto;
 
     &__side {
