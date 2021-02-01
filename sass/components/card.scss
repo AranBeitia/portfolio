@@ -151,11 +151,6 @@
     color: $color-white;
   }
 
-  &__cta {
-    @include flex(flex,center,center);
-  }
-
-
   @include is-tablet-landscape {
     height: auto;
 
