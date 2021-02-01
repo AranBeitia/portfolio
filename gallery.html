@@ -5,8 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/scrollnav@3.0.1/dist/scrollnav.min.umd.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/nav.js" defer></script>
 
@@ -34,19 +32,19 @@
     </div>
   </nav>
 
-  <header class="header" id="intro">
-    <div class="header__logo-box">
-      <img src="img/logo.svg" alt="Logo" class="header__logo">
+  <header class="hero" id="intro">
+    <div class="logo-container">
+      <img src="img/logo.svg" alt="Logo" class="logo">
     </div>
-    <div class="header__text-box">
+    <div class="u-center-text">
       <h1 class="heading-primary">
-        <span class="heading-primary--main">Hello, I am Arantza</span>
+        <span class="heading-primary--main">Hola, soy Arantza</span>
         <span class="heading-primary--sub">Front end UI developer</span>
       </h1>
       <a href="#" class="[ btn btn--white btn--animated ]">abajo</a>
     </div>
   </header>
-  <main class="">
+  <main>
     <section class="section-light --low" id="about">
       <div class="u-center-text u-margin-bottom-big">
         <h2 class="heading-secondary">Un poco sobre mí</h2>
@@ -54,12 +52,10 @@
       <div class="page-container">
         <div class="grid-2-to-1">
           <section>
-            <h3 class="heading-tertiary u-margin-bottom-small">Codifico interfaces maravillosamente simples, y me
-              encanta
-              lo que hago.</h3>
+            <h3 class="uppercase">Codifico interfaces maravillosamente simples, y me
+              encanta lo que hago.</h3>
             <p class="paragraph">Desde que comencé hace 10 años, he trabajado para consultoras, para nuevas empresas,
-              como
-              freelancer e incluso para talleres de nuevas tecnologías para niños. He colaborado en el desarrollo
+              como freelancer e incluso para workshops de nuevas tecnologías para niños. He colaborado en el desarrollo
               de productos digitales para uso comercial y de consumo, y para producto propio tanto en trabajos
               de desarrollo front end, gestión de contenidos, posicionamiento y tareas de diseño gráfico.</p>
           </section>
@@ -81,13 +77,13 @@
     </section>
     <section class="section-skills" id="skills">
       <div class="u-center-text u-margin-bottom-big">
-        <h2 class="heading-secondary">Skills</h2>
+        <h2 class="[ heading-secondary --light ]">Skills</h2>
       </div>
       <div class="grid-2-to-1 page-container">
         <div class="feature-box">
           <i class="feature-box__icon aran-icon-laptop-code-solid"></i>
-          <h3 class="heading-tertiary u-margin-bottom-small">Front end</h3>
-          <p>Me gusta codificar desde cero, y disfruto dando vida a ideas en el navegador</p>
+          <h3 class="uppercase">Front end</h3>
+          <p>Me gusta codificar desde cero, y disfruto viendo en el navegador las ideas a las que he dado vida</p>
           <h4 class="subtitle">Lenguajes que hablo:</h4>
           <p>HTML, CSS, Sass, Less, JS, VueJS</p>
           <h4 class="subtitle">Herramientas desarrollo:</h4>
@@ -101,17 +97,17 @@
         </div>
         <div class="feature-box">
           <i class="feature-box__icon aran-icon-pen-fancy-solid"></i>
-          <h3 class="heading-tertiary u-margin-bottom-small">Design</h3>
-          <p>En ciertas ocasiones he desarrollado tareas de diseño</p>
+          <h3 class="uppercase">Design</h3>
+          <p>En ocasiones desarrollo tareas de diseño, las cuales son para mí momentos motivadores y de relax</p>
           <h4 class="subtitle">Herramientas diseño:</h4>
           <ul>
-            <li>Papel y lapiz</li>
             <li>Photoshop</li>
             <li>Illustrator</li>
             <li>Sketch</li>
             <li>Zeplin</li>
             <li>Invision</li>
             <li>Figma</li>
+            <li>Papel y lapiz</li>
           </ul>
         </div>
       </div>
@@ -119,10 +115,10 @@
     <section class="section-light --high" id="portfolio">
       <div class="u-center-text u-margin-bottom-big">
         <h2 class="heading-secondary">Ultimos trabajos</h2>
-        <p>Algunos de los proyectos de los que he formado parte recientemente.</p>
+        <p>Algunos de los proyectos de los que he formado parte</p>
       </div>
       <div class="page-container">
-        <!--<div class="grid-3-to-1">
+        <div class="grid-auto-to-1">
           <div class="card">
             <div class="[ card__side card__side--front ]">
               <div class="[ card__picture card__picture--1 ]">
@@ -136,7 +132,7 @@
                 Axa Healthkeeper, implementación de diseños a demanda sin frameworks, desarrollado en AngularJS.
               </p>
               <div class="card__cta">
-                <a href="#" class="btn btn--white">Ver</a>
+                <a href="#" class="[ btn btn--white ]">Ver</a>
               </div>
             </div>
           </div>
@@ -153,7 +149,7 @@
                 Axa Healthkeeper, implementación de diseños a demanda sin frameworks, desarrollado en VueJS.
               </p>
               <div class="card__cta">
-                <a href="#" class="btn btn--white">Ver</a>
+                <a href="#" class="[ btn btn--white ]">Ver</a>
               </div>
             </div>
           </div>
@@ -170,13 +166,13 @@
                 evento tecnológico promovido por Ve Interactive. Diseño del logotipo.
               </p>
               <div class="card__cta">
-                <a href="#" class="btn btn--white">Ver</a>
+                <a href="#" class="[ btn btn--white ]">Ver</a>
               </div>
             </div>
           </div>
           <!-- <div class="u-center-text u-margin-top-big">
         <a href="#" class="btn btn--magenta">Ver más</a>
-      </div> --
+      </div> -->
           <div class="card">
             <div class="[ card__side card__side--front ]">
               <div class="[ card__picture card__picture--4 ]">
@@ -191,7 +187,7 @@
                 en procesos de compra.
               </p>
               <div class="card__cta">
-                <a href="#" class="btn btn--white">Ver</a>
+                <a href="#" class="[ btn btn--white ]">Ver</a>
               </div>
             </div>
           </div>
@@ -209,7 +205,7 @@
                 en procesos de compra.
               </p>
               <div class="card__cta">
-                <a href="#" class="btn btn--white">Ver</a>
+                <a href="#" class="[ btn btn--white ]">Ver</a>
               </div>
             </div>
           </div>
@@ -225,7 +221,7 @@
               <p class="card__description">Desarrollo del portal para nueva imagen corporativa
               </p>
               <div class="card__cta">
-                <a href="#" class="btn btn--white">Ver</a>
+                <a href="#" class="[ btn btn--white ]">Ver</a>
               </div>
             </div>
           </div>
@@ -242,7 +238,7 @@
                 AA.
               </p>
               <div class="card__cta">
-                <a href="#" class="btn btn--white">Ver</a>
+                <a href="#" class="[ btn btn--white ]">Ver</a>
               </div>
             </div>
           </div>
@@ -259,19 +255,10 @@
                 en asp.net
               </p>
               <div class="card__cta">
-                <a href="#" class="btn btn--white">Ver</a>
+                <a href="#" class="[ btn btn--white ]">Ver</a>
               </div>
             </div>
           </div>
-        </div>-->
-
-        <!--swipe-->
-        <div class='containersw'>
-          <img src='https://images.unsplash.com/photo-1514117445516-2ecfc9c4ec90?ixlib=rb-0.3.5&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ&amp;s=0e0b58fcf67fa6e8a010322d617e39af' alt='Mountain massif, sunbathed, partly covered in show.'/>
-          <img src='https://images.unsplash.com/photo-1510325805092-2951ab330b7d?ixlib=rb-0.3.5&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ&amp;s=017cf46443f4821a375c20e8c68e37f0' alt='Tiny bird with pale brown, orange and white feathers in an evergreen tree.'/>
-          <img src='https://images.unsplash.com/photo-1514848567240-a81cb051807a?ixlib=rb-0.3.5&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ&amp;s=3a0e476ab712db0eb68ab121a21c54de' alt='Close-up of yellow rose opening up.'/>
-          <img src='https://images.unsplash.com/photo-1465408522361-a6f502298219?ixlib=rb-0.3.5&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ&amp;s=7a6bd1244c42d1dbd3984a4c13981666' alt='Fast and foamy creek in the middle of the forest.'/>
-          <img src='https://images.unsplash.com/photo-1503843778847-2b8bdce2ed3d?ixlib=rb-0.3.5&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ&amp;s=d547781176ce182eeeb7303bac05abf4' alt='Fluffy little tabby with blue eyes climbing up a tree.'/>
         </div>
       </div>
     </section>
@@ -302,7 +289,6 @@
     <img src="img/logo.svg" alt="Logo" class="footer__logo">
     <p class="footer__copyright">&copy; 2021 <a href="#intro" class="footer__link">Arantza Beitia</a></p>
   </footer>
-  <script src="js/swipe.js" defer></script>
 </body>
 
 </html>
