@@ -6,7 +6,7 @@
     to right bottom, 
     rgba($color-primary, 0.8), 
     rgba($color-primary-dark, 0.8)), 
-  url(../img/hero-small.jpg);
+  url($image-path + 'hero-small.jpg');
   background-size: cover;
   background-position: top;
 
@@ -23,7 +23,7 @@
       to right bottom, 
       rgba($color-primary, 0.8), 
       rgba($color-primary-dark, 0.8)), 
-    url(../img/hero.jpg);
+    url($image-path + 'hero.jpg');
   }
 
   @include is-mobile {

@@ -88,35 +88,35 @@
     border-top-right-radius: 5px;
 
     &--1 {
-      background-image: url(../img/web/axaHealthkeeper.jpg);
+      background-image: url($image-path + 'web/axaHealthkeeper.jpg');
     }
 
     &--2 {
-      background-image: url(../img/web/myEasySante.jpg);
+      background-image: url($image-path + 'web/myEasySante.jpg');
     }
 
     &--3 {
-      background-image: url(../img/web/dtw.jpg);
+      background-image: url($image-path + 'web/dtw.jpg');
     }
 
     &--4 {
-      background-image: url(../img/web/veInteractive.jpg);
+      background-image: url($image-path + 'web/veInteractive.jpg');
     }
 
     &--5 {
-      background-image: url(../img/web/surePlanet.jpg);
+      background-image: url($image-path + 'web/surePlanet.jpg');
     }
 
     &--6 {
-      background-image: url(../img/web/novocal.jpg);
+      background-image: url($image-path + 'web/novocal.jpg');
     }
     
     &--7 {
-      background-image: url(../img/web/metaposta.jpg);
+      background-image: url($image-path + 'web/metaposta.jpg');
     }
 
     &--8 {
-      background-image: url(../img/web/miConvenio.jpg);
+      background-image: url($image-path + 'web/miConvenio.jpg');
     }
   }
 
