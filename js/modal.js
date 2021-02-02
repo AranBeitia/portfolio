@@ -8,15 +8,15 @@ function modalEvent (button) { // si creo la funcion como variable, peta
   button.addEventListener('click', () => {
     const trigger = button.getAttribute('data-modal-trigger')
     const modal = document.querySelector(`[data-modal=${trigger}]`)
-    const wrapper = modal.querySelector('.modal-wrapper')
-    const close = modal.querySelector('.button-close')
+    const wrapper = modal.querySelector('.modal__wrapper')
+    const close = modal.querySelector('.modal__close-button')
 
     modal.addEventListener('click', renderPortfolio())
-    close.addEventListener('click', () => modal.classList.remove('open'))
-    modal.addEventListener('click', () => modal.classList.remove('open'))
+    close.addEventListener('click', () => modal.classList.remove('--open'))
+    modal.addEventListener('click', () => modal.classList.remove('--open'))
     wrapper.addEventListener('click', (event) => event.stopPropagation())
 
-    modal.classList.toggle('open')
+    modal.classList.toggle('--open')
   })
 }
 
@@ -32,13 +32,11 @@ const renderPortfolio = async () => {
   let html = ''
   datos.forEach(dato => {
     html = `
-      <header class="modal-header">
-        <h2>${dato.title}</h2>
-      </header>
+      <h2 class="text-center">${dato.title}</h2>
       <img src="${dato.imgUrl}" alt="${dato.title}" class="modal__image">
     `
   })
-  document.getElementById('my-modal').innerHTML = html
+  document.getElementById('modal-content').innerHTML = html
 }
 
 // const funcionNueva = () => { // cómo exportar mis js a un main.js

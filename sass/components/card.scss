@@ -24,7 +24,7 @@
     @include is-tablet-landscape {
       position: relative;
       box-shadow: none;
-      height: 20rem;
+      height: 25rem;
     }
 
     &--front {
@@ -32,9 +32,9 @@
     }
 
     &--back {
-      @include flex(flex, around, center);
+      @include flex(flex, between, center);
       flex-direction: column;
-      padding: 3rem;
+      padding: 2rem;
       transform: rotateY(-180deg);
 
       @include is-tablet-landscape {
@@ -84,8 +84,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: screen;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-top-left-radius: 3px;
     border-top-right-radius: 5px;
 
@@ -169,7 +167,14 @@
 
   &__description {
     text-align: center;
+    margin-top: 3rem;
     color: $color-white;
+    font-size: 16px;
+    line-height: 1.5;
+
+    @include is-tablet-landscape {
+      font-size: 14px;
+    }
   }
 }
 

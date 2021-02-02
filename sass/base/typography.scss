@@ -24,7 +24,7 @@ body {
 
   @include is-mobile {
     font-size: $font-size-base-mobile;
-    line-height: 1.2;
+    line-height: 20px;
   }
 }
 
@@ -68,8 +68,8 @@ $body-texts: (
     'mobile': (16px 24px 'bold'),
   ),
   'body-secondary': (
-    'desktop': (16px 24px 'regular'),
-    'mobile': (14px 21px 'regular'),
+    'desktop': (16px 22px 'regular'),
+    'mobile': (14px 20px 'regular'),
   ),
   'body-secondary-semi-bold': (
     'desktop': (16px 24px 'bold'),
