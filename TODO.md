@@ -1,7 +1,7 @@
 FUNCTIONALITIES:
-1- navigation menu
+1- navigation menu - +1
 2- soft scroll
-3- modal gallery
+3- modal gallery - +1
 4- contact form
 
 CODE:
