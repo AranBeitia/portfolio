@@ -647,6 +647,9 @@ h1, h2, h3, h4, h5, h6 {
   perspective: 150rem;
   -moz-perspective: 150rem;
   height: 30rem; }
+  @media screen and (max-width: 1023px) {
+    .card {
+      height: auto; } }
   .card__side {
     position: absolute;
     top: 0;
@@ -658,10 +661,25 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
     overflow: hidden; }
+    @media screen and (max-width: 1023px) {
+      .card__side {
+        position: relative;
+        box-shadow: none;
+        height: 20rem; } }
     .card__side--front {
       background-color: #fff; }
     .card__side--back {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      padding: 3rem;
       transform: rotateY(-180deg); }
+      @media screen and (max-width: 1023px) {
+        .card__side--back {
+          margin-top: -5rem;
+          transform: rotateY(0);
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); } }
       .card__side--back-primary {
         background-image: linear-gradient(to right bottom, #ffd1fb, #7f2885); }
       .card__side--back-secondary {
@@ -670,6 +688,9 @@ h1, h2, h3, h4, h5, h6 {
         background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
   .card:hover .card__side--front {
     transform: rotateY(180deg); }
+    @media screen and (max-width: 1023px) {
+      .card:hover .card__side--front {
+        transform: rotateY(0); } }
   .card:hover .card__side--back {
     transform: rotateY(0); }
   .card__picture {
@@ -721,21 +742,7 @@ h1, h2, h3, h4, h5, h6 {
       background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
   .card__description {
     text-align: center;
-    padding: 3rem;
     color: #fff; }
-  @media screen and (max-width: 1023px) {
-    .card {
-      height: auto; }
-      .card__side {
-        position: relative;
-        box-shadow: none;
-        height: 20rem; }
-        .card__side--back {
-          margin-top: -5rem;
-          transform: rotateY(0);
-          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); }
-      .card:hover .card__side--front {
-        transform: rotateY(0); } }
 
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);

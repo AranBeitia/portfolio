@@ -88,7 +88,8 @@ $coke-space-align: (
   'start': flex-start,
   'end': flex-end,
   'center': center,
-	'between': space-between
+	'between': space-between,
+	'around' : space-around
 ) !default;
 
 ///
