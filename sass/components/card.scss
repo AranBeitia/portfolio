@@ -171,10 +171,6 @@
     color: $color-white;
     font-size: 16px;
     line-height: 1.5;
-
-    @include is-tablet-landscape {
-      font-size: 14px;
-    }
   }
 }
 
