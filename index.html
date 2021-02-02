@@ -7,7 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/nav.js" defer></script>
-  <script src="js/app.js" defer></script>
+  <script src="js/modal.js" defer></script>
+  <!-- <script src="js/app.js" defer></script> -->
 
   <link rel="shortcut icon" type="image/png" href="favicon.png">
   <title>Arantza Beitia</title>
@@ -132,7 +133,7 @@
               <p class="card__description">Maquetación para web y apps android e IOS. Desarrollo de producto para
                 Axa Healthkeeper, implementación de diseños a demanda sin frameworks, desarrollado en AngularJS.
               </p>
-              <button class="[ btn btn--white ] trigger" data-modal-trigger="trigger-1">Ver</button>
+              <button class="[ btn btn--white ] modal-trigger" data-modal-trigger="trigger-1">Ver</button>
             </div>
           </div>
           <div class="card">
@@ -181,7 +182,7 @@
                 generar tráfico, aumentar engagement, minimizar el abandono del sitio web, y aumentar las conversiones
                 en procesos de compra.
               </p>
-              <button class="[ btn btn--white ] trigger" data-modal-trigger="trigger-1">Ver</button>
+              <button class="[ btn btn--white ] modal-trigger" data-modal-trigger="trigger-2">Ver</button>
             </div>
           </div>
           <div class="card">
@@ -197,7 +198,7 @@
                 generar tráfico, aumentar engagement, minimizar el abandono del sitio web, y aumentar las conversiones
                 en procesos de compra.
               </p>
-              <button class="[ btn btn--white ] trigger" data-modal-trigger="trigger-1">Ver</button>
+              <button class="[ btn btn--white ] modal-trigger" data-modal-trigger="trigger-3">Ver</button>
             </div>
           </div>
           <div class="card">
@@ -276,12 +277,9 @@
   </footer>
 
   <div class="modal" data-modal="trigger-1">
-    <article class="content-wrapper">
-      <button class="close"></button>
-      <header class="modal-header">
-        <h2>Titulo web</h2>
-      </header>
-      <img src="./img/web/dtw.jpg" alt="" class="modal__image">
+    <article class="modal-wrapper">
+      <button class="button-close"></button>
+      <div id="my-modal"></div>
     </article>
   </div>
 </body>

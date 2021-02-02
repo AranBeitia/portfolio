@@ -16,7 +16,7 @@
     background-color: rgba(0,0,0,0.5);
     transition: background-color .3s;
 
-    > .content-wrapper {
+    > .modal-wrapper {
       transform: scale(1.0);
     }
   }
@@ -25,7 +25,7 @@
     width: 100%;
   }
 
-  .content-wrapper {
+  .modal-wrapper {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -41,7 +41,7 @@
     transition: transform .3s;
     transition-delay: 0.15s;
 
-    .close {
+    .button-close {
       position: absolute;
       top: 0.5rem;
       right: 0.5rem;

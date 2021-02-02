@@ -842,11 +842,11 @@ body {
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
     transition: background-color .3s; }
-    .modal.open > .content-wrapper {
+    .modal.open > .modal-wrapper {
       transform: scale(1); }
   .modal__image {
     width: 100%; }
-  .modal .content-wrapper {
+  .modal .modal-wrapper {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -861,7 +861,7 @@ body {
     transform: scale(0);
     transition: transform .3s;
     transition-delay: 0.15s; }
-    .modal .content-wrapper .close {
+    .modal .modal-wrapper .button-close {
       position: absolute;
       top: 0.5rem;
       right: 0.5rem;
@@ -874,19 +874,19 @@ body {
       background-color: transparent;
       font-size: 1.5rem;
       transition: .3s linear; }
-      .modal .content-wrapper .close:before, .modal .content-wrapper .close:after {
+      .modal .modal-wrapper .button-close:before, .modal .modal-wrapper .button-close:after {
         position: absolute;
         content: '';
         width: 1.25rem;
         height: 0.125rem;
         background-color: #000; }
-      .modal .content-wrapper .close:before {
+      .modal .modal-wrapper .button-close:before {
         transform: rotate(-45deg); }
-      .modal .content-wrapper .close:after {
+      .modal .modal-wrapper .button-close:after {
         transform: rotate(45deg); }
-      .modal .content-wrapper .close:hover {
+      .modal .modal-wrapper .button-close:hover {
         transform: rotate(360deg); }
-        .modal .content-wrapper .close:hover:before, .modal .content-wrapper .close:hover:after {
+        .modal .modal-wrapper .button-close:hover:before, .modal .modal-wrapper .button-close:hover:after {
           background-color: #ae6aa9; }
 
 .u-center-text {

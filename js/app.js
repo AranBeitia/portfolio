@@ -1,20 +1,5 @@
-const buttons = document.querySelectorAll('.trigger[data-modal-trigger]');
+// cómo importar scripts js de deiferentes ficheros
 
-for(let button of buttons) {
-	modalEvent(button);
-}
+import funcionNueva from 'modal'
 
-function modalEvent(button) {
-	button.addEventListener('click', () => {
-		const trigger = button.getAttribute('data-modal-trigger');
-		const modal = document.querySelector(`[data-modal=${trigger}]`);
-		const contentWrapper = modal.querySelector('.content-wrapper');
-		const close = modal.querySelector('.close');
-
-		close.addEventListener('click', () => modal.classList.remove('open'));
-		modal.addEventListener('click', () => modal.classList.remove('open'));
-		contentWrapper.addEventListener('click', (e) => e.stopPropagation());
-
-		modal.classList.toggle('open');
-	});
-}
+document.addEventListener('DOMContentLoaded', funcionNueva)
