@@ -1,20 +1,23 @@
-[
-  {
-    "id": 1,
-    "title": "Axa Healthkeeper",
-    "description": "Maquetación para web y apps android e IOS. Desarrollo de producto para Axa Healthkeeper, implementación de diseños a demanda sin frameworks, desarrollado en AngularJS.",
-    "imgUrl": "img/web/axaHealthkeeper.jpg"
-  },
-  {
-    "id": 2,
-    "title": "My easy santé",
-    "description": "Maquetación para web y apps android e IOS. Desarrollo de producto para Axa Healthkeeper, implementación de diseños a demanda sin frameworks, desarrollado en VueJS.",
-    "imgUrl": "img/web/myEasySante.jpg"
-  },
-  {
-    "id": 3,
-    "title": "Donostia Tech Week",
-    "description": "Maquetación en WordPress de web Donostia Tech Week en su edición del 2017, evento tecnológico promovido por Ve Interactive. Diseño del logotipo.",
-    "imgUrl": "img/web/dtw.jpg"
-  }
-]
+{
+  "trigger-1": 
+    {
+      "id": 1,
+      "title": "Axa Healthkeeper",
+      "description": "Maquetación para web y apps android e IOS. Desarrollo de producto para Axa Healthkeeper, implementación de diseños a demanda sin frameworks, desarrollado en AngularJS.",
+      "imgUrl": "img/web/axaHealthkeeper.jpg"
+    },
+  "trigger-2":
+    {
+      "id": 2,
+      "title": "My easy santé",
+      "description": "Maquetación para web y apps android e IOS. Desarrollo de producto para Axa Healthkeeper, implementación de diseños a demanda sin frameworks, desarrollado en VueJS.",
+      "imgUrl": "img/web/myEasySante.jpg"
+    },
+  "trigger-3":
+    {
+      "id": 3,
+      "title": "Donostia Tech Week",
+      "description": "Maquetación en WordPress de web Donostia Tech Week en su edición del 2017, evento tecnológico promovido por Ve Interactive. Diseño del logotipo.",
+      "imgUrl": "img/web/dtw.jpg"
+    }
+}

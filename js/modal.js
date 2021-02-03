@@ -1,48 +1,44 @@
 const buttons = document.querySelectorAll('.modal-trigger[data-modal-trigger]')
 
-buttons.forEach(button => { // no dispara el evento por cada boton
+bindModalEvents()
+
+buttons.forEach(button => {
   modalEvent(button)
 })
 
-function modalEvent (button) { // si creo la funcion como variable, peta
-  button.addEventListener('click', () => {
-    const trigger = button.getAttribute('data-modal-trigger')
-    const modal = document.querySelector(`[data-modal=${trigger}]`)
-    const wrapper = modal.querySelector('.modal__wrapper')
-    const close = modal.querySelector('.modal__close-button')
-
-    modal.addEventListener('click', renderPortfolio())
-    close.addEventListener('click', () => modal.classList.remove('--open'))
-    modal.addEventListener('click', () => modal.classList.remove('--open'))
-    wrapper.addEventListener('click', (event) => event.stopPropagation())
-
+function modalEvent (button) {
+  button.addEventListener('click', (event) => {
+    const dataId = event.target.getAttribute('data-modal-trigger')
+    renderPortfolio(dataId)
+    const modal = document.getElementsByClassName('modal')[0]
     modal.classList.toggle('--open')
   })
 }
 
-const getPortfolio = () => {
+function bindModalEvents() {
+  const modal = document.getElementsByClassName('modal')[0]
+  const wrapper = document.getElementsByClassName('modal__wrapper')[0]
+  const close = document.getElementsByClassName('modal__close-button')[0]
+
+  close.addEventListener('click', () => modal.classList.remove('--open'))
+  modal.addEventListener('click', () => modal.classList.remove('--open'))
+  wrapper.addEventListener('click', (event) => event.stopPropagation())
+}
+
+function getPortfolio () {
   return fetch('portfolio.json')
     .then(response => response.json())
     .then(result => result)
     .catch(error => console.log(error))
 }
 
-const renderPortfolio = async () => {
+async function renderPortfolio(dataId) {
   const datos = await getPortfolio()
-  let html = ''
-  datos.forEach(dato => {
-    html = `
+  const dato = datos[dataId]
+
+  let  html = `
       <h2 class="text-center">${dato.title}</h2>
-      <img src="${dato.imgUrl}" alt="${dato.title}" class="modal__image">
+      <img src="assets/${dato.imgUrl}" alt="${dato.title}" class="modal__image">
     `
-  })
   document.getElementById('modal-content').innerHTML = html
 }
-
-// const funcionNueva = () => { // cómo exportar mis js a un main.js
-//   console.log('hello kitty')
-// }
-
-// export default {
-//   funcionNueva
-// }

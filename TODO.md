@@ -3,6 +3,7 @@ FUNCTIONALITIES:
 2- soft scroll
 3- modal gallery - +1
 4- contact form
+5- webpack
 
 CODE:
 1- unify tokens

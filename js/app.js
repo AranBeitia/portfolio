@@ -1,4 +1,4 @@
-// cómo importar scripts js de deiferentes ficheros
+// cómo importar scripts js de diferentes ficheros
 
 import funcionNueva from 'modal'
 
