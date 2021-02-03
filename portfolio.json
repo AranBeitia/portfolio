@@ -1,23 +1,54 @@
 {
-  "trigger-1": 
-    {
-      "id": 1,
-      "title": "Axa Healthkeeper",
-      "description": "Maquetación para web y apps android e IOS. Desarrollo de producto para Axa Healthkeeper, implementación de diseños a demanda sin frameworks, desarrollado en AngularJS.",
-      "imgUrl": "img/web/axaHealthkeeper.jpg"
-    },
-  "trigger-2":
-    {
-      "id": 2,
-      "title": "My easy santé",
-      "description": "Maquetación para web y apps android e IOS. Desarrollo de producto para Axa Healthkeeper, implementación de diseños a demanda sin frameworks, desarrollado en VueJS.",
-      "imgUrl": "img/web/myEasySante.jpg"
-    },
-  "trigger-3":
-    {
-      "id": 3,
-      "title": "Donostia Tech Week",
-      "description": "Maquetación en WordPress de web Donostia Tech Week en su edición del 2017, evento tecnológico promovido por Ve Interactive. Diseño del logotipo.",
-      "imgUrl": "img/web/dtw.jpg"
-    }
+  "axa-hk": 
+  {
+    "id": 1,
+    "title": "Axa Healthkeeper",
+    "description": "Maquetación para web y apps android e IOS. Desarrollo de producto para Axa Healthkeeper, implementación de diseños a demanda sin frameworks, desarrollado en AngularJS.",
+    "imgUrl": "axaHealthkeeper.jpg"
+  },
+  "axa-fr":
+  {
+    "id": 2,
+    "title": "My easy santé",
+    "description": "Maquetación para web y apps android e IOS. Desarrollo de producto para Axa Healthkeeper, implementación de diseños a demanda sin frameworks, desarrollado en VueJS.",
+    "imgUrl": "myEasySante.jpg"
+  },
+  "donostia-tw":
+  {
+    "id": 3,
+    "title": "Donostia Tech Week",
+    "description": "Maquetación en WordPress de web Donostia Tech Week en su edición del 2017, evento tecnológico promovido por Ve Interactive. Diseño del logotipo.",
+    "imgUrl": "dtw.jpg"
+  },
+  "ve-interactive":
+  {
+    "id": 4,
+    "title": "Ve interactive",
+    "description": "Desarrollo de aplicaciones en plataforma pata ayudar a empresas online a generar tráfico, aumentar engagement, minimizar el abandono del sitio web, y aumentar las conversiones en procesos de compra.",
+    "imgUrl": "dtw.jpg"
+  },
+  "sure-planet": {
+    "id": 5,
+    "title": "Sure Planet",
+    "description": "Maquetación en WordPress de web Donostia Tech Week en su edición del 2017, evento tecnológico promovido por Ve Interactive. Diseño del logotipo.",
+    "imgUrl": "surePlanet.jpg"
+  },
+  "novocal": {
+    "id": 6,
+    "title": "Novocal",
+    "description": "Desarrollo del portal para nueva imagen corporativa",
+    "imgUrl": "novocal.jpg"
+  },
+  "metaposta": {
+    "id": 7,
+    "title": "Metaposta",
+    "description": "Desarrollo front end siguiendo los estándares web y de accesibilidad nivel",
+    "imgUrl": "metaposta.jpg"
+  },
+  "mi-convenio": {
+    "id": 8,
+    "title": "Mi convenio",
+    "description": "Diseño y reestructuración completa del sitio web miConvenio.com, desarrollada en asp.net",
+    "imgUrl": "miConvenio.jpg"
+  }
 }

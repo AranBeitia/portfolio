@@ -36,9 +36,9 @@ async function renderPortfolio(dataId) {
   const datos = await getPortfolio()
   const dato = datos[dataId]
 
-  let  html = `
+  let html = `
       <h2 class="text-center">${dato.title}</h2>
-      <img src="assets/${dato.imgUrl}" alt="${dato.title}" class="modal__image">
+      <img src="assets/img/web/${dato.imgUrl}" alt="${dato.title}" class="modal__image">
     `
   document.getElementById('modal-content').innerHTML = html
 }
