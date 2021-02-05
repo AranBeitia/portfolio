@@ -1,13 +1,13 @@
 FUNCTIONALITIES:
-1- navigation menu - +1
-2- soft scroll
-3- modal gallery - +1
-4- contact form
-5- webpack
+1- navigation menu - TESTING
+2- modal gallery - TESTING
+3- webpack
+4- soft scroll
+5- contact form
 
 CODE:
 1- unify tokens
-2- improve grid layout
-3- fonts and typography
+2- improve grid layout - DONE
+3- fonts and typography -INPROGRESS
 4- assets path
 5- images

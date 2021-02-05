@@ -26,25 +26,6 @@ h6 {
   @extend .text-body-main-bold;
 }
 
-.heading-primary {
-  color: $color-white;
-  backface-visibility: hidden;
-  margin-bottom: 6rem;
-
-  &--main {
-    display: block;
-    animation: moveInLeft 1s ease-out;
-  }
-
-  &--sub {
-    display: block;
-    @extend .text-body-secondary;
-    text-transform: uppercase;
-    letter-spacing: .5rem;
-    animation: moveInRight 1s ease-out;
-  }
-}
-
 .heading-secondary {
   display: inline-block;
   text-transform: uppercase;
@@ -63,12 +44,4 @@ h6 {
   margin-top: 1rem;
   font-weight: $font-weight-bold;
   color: $color-primary;
-}
-
-.uppercase {
-  text-transform: uppercase;
-}
-
-.text-center {
-  text-align: center;
 }

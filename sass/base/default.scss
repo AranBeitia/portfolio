@@ -12,12 +12,13 @@ body {
   }
 }
 
+p::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}
+
 @at-root ul#{&} {
   list-style: none;
   padding-left: 0;
 }
 
-::selection {
-  background-color: $color-primary;
-  color: $color-white;
-}

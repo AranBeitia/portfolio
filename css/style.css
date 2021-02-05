@@ -152,7 +152,6 @@
 .font-black {
   font-weight: 900; }
 
-/* Typography */
 body {
   font-family: "Lato";
   font-size: 16px;
@@ -245,12 +244,12 @@ h5 {
       line-height: 24px !important;
       font-weight: 700 !important; } }
 
-.text-body-secondary, .heading-primary--sub {
+.text-body-secondary, .hero__title.--sub {
   font-size: 16px !important;
   line-height: 22px !important;
   font-weight: 400 !important; }
   @media screen and (max-width: 599px) {
-    .text-body-secondary, .heading-primary--sub {
+    .text-body-secondary, .hero__title.--sub {
       font-size: 14px !important;
       line-height: 20px !important;
       font-weight: 400 !important; } }
@@ -285,31 +284,18 @@ body {
     body {
       padding: 0; } }
 
+p::selection {
+  background-color: #ae6aa9;
+  color: #fff; }
+
 ul {
   list-style: none;
   padding-left: 0; }
-
-::selection {
-  background-color: #ae6aa9;
-  color: #fff; }
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 1rem;
   letter-spacing: normal; }
-
-.heading-primary {
-  color: #fff;
-  backface-visibility: hidden;
-  margin-bottom: 6rem; }
-  .heading-primary--main {
-    display: block;
-    animation: moveInLeft 1s ease-out; }
-  .heading-primary--sub {
-    display: block;
-    text-transform: uppercase;
-    letter-spacing: .5rem;
-    animation: moveInRight 1s ease-out; }
 
 .heading-secondary {
   display: inline-block;
@@ -327,13 +313,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   color: #ae6aa9; }
 
-.uppercase {
-  text-transform: uppercase; }
-
-.text-center {
-  text-align: center; }
-
-/* grid layout*/
 .grid-2-to-1, .grid-auto-to-1 {
   display: grid;
   grid-gap: 5rem; }
@@ -471,6 +450,17 @@ h1, h2, h3, h4, h5, h6 {
     .hero {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); } }
+  .hero__title {
+    display: block;
+    color: #fff;
+    animation: moveInLeft 1s ease-out; }
+    .hero__title.--main {
+      backface-visibility: hidden; }
+    .hero__title.--sub {
+      letter-spacing: .5rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      animation: moveInRight 1s ease-out; }
 
 .page-container {
   max-width: var(--grid-width);
@@ -906,9 +896,6 @@ body {
   .modal__image {
     width: 100%; }
 
-.u-center-text {
-  text-align: center !important; }
-
 .u-margin-bottom-small {
   margin-bottom: 1rem !important; }
 
@@ -940,3 +927,9 @@ body {
     .u-padding-10 {
       padding-left: 1rem !important;
       padding-right: 1rem !important; } }
+
+.text-center {
+  text-align: center !important; }
+
+.uppercase {
+  text-transform: uppercase !important; }

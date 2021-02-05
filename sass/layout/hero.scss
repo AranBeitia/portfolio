@@ -31,4 +31,23 @@
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   }
+
+  &__title {
+    $duration: 1s ease-out;
+    display: block;
+    color: $color-white;
+    animation: moveInLeft $duration;
+
+    &.--main {
+      backface-visibility: hidden;
+    }
+
+    &.--sub {
+      @extend .text-body-secondary;
+      letter-spacing: .5rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      animation: moveInRight $duration;
+    }
+  }
 }
