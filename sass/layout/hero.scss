@@ -9,6 +9,7 @@
   url($image-path + 'hero-small.jpg');
   background-size: cover;
   background-position: top;
+  background-attachment: fixed;
 
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
