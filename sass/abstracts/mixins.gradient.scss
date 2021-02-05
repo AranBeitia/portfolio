@@ -1,0 +1,18 @@
+@mixin linear-gradient-image ($image) {
+  background-image: linear-gradient(
+    to right bottom, 
+    rgba($color-primary, .8), 
+    rgba($color-primary-dark, .8)),
+    url($image);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+@mixin linear-gradient (){
+  background: linear-gradient(
+    to right bottom,
+    $color-primary-light,
+    $color-primary-dark
+  );
+}

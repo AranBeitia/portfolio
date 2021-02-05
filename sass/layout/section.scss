@@ -34,111 +34,22 @@
   }
 }
 
-.section-skills {
+.section-background {
   padding: 10rem 0;
-  background-image: linear-gradient(
-    to right bottom, 
-    rgba($color-primary, 0.8), 
-    rgba($color-primary-dark, 0.8)), 
-  url($image-path + 'web.jpg');
-  background-size: cover;
-  background-attachment: fixed;
+  @include linear-gradient-image($image-path + 'web.jpg');
   transform: skewY(-7deg);
   margin-top: -10rem;
 
   & > * {
     transform: skewY(7deg);
   }
-
-  @include is-tablet-landscape {
-    padding: 10rem 0;
-  }
 }
 
-.section-contact {
+.section-gradient {
   padding: 10rem 0;
-  background-image: linear-gradient(
-    to right bottom,
-    $color-primary-light,
-    $color-primary-dark
-  );
+  @include linear-gradient();
 
   @include is-tablet-landscape {
     padding: 5rem 0;
-  }
-}
-
-.book {
-  background-image: linear-gradient(
-    105deg, 
-    rgba($color-white, .9) 0%,
-    rgba($color-white, .9) 50%,
-    transparent 50%
-  ),
-    url($image-path + 'contactBg.jpg');
-  background-size: 100%;
-  background-position: center;
-  border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
-
-    @include is-tablet-landscape {
-    background-image: linear-gradient(
-      105deg, 
-    rgba($color-white, .9) 0%,
-    rgba($color-white, .9) 65%,
-    transparent 65%
-    ),
-    url($image-path + 'contactBg.jpg');
-    background-size: cover;
-  }
-
-    @include is-mobile {
-    background-image: linear-gradient(
-      105deg, 
-      rgba($color-white, .9) 0%,
-      rgba($color-white, .9) 100%
-    ),
-    url($image-path + 'contactBg.jpg');
-    background-size: cover;
-  }
-
-  &__form {
-    padding: 6rem;
-
-    @include is-mobile {
-      width: auto;
-    }
-  }
-
-  &__link {
-    display: block;
-    padding: 1rem 0;
-    font-size: 2.5rem;
-    color: $color-primary-dark;
-
-    @include is-mobile {
-      font-size: 1.5rem;
-    }
-  }
-
-  &__icon {
-    padding-right: 1.5rem;
-  }
-}
-
-.social-media {
-  &__list {
-    list-style: none;
-  }
-
-  &__item {
-    @include flex(flex, start, center);
-    margin: 1rem 0;
-  }
-
-  &__icon {
-    font-size: 2rem;
-    padding-right: 1.5rem;
-    color: $color-primary-dark;
   }
 }

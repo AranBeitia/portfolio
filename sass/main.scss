@@ -5,6 +5,7 @@
 @import 'abstracts/mixins.flexbox';
 @import 'abstracts/mixins.responsive';
 @import 'abstracts/mixins.grid';
+@import 'abstracts/mixins.gradient';
 @import 'abstracts/animations';
 
 @import 'icons/icons';
@@ -28,7 +29,7 @@
 // @import 'components/menu';
 @import 'components/modal';
 // @import 'components/icon';
-// @import 'components/form';
+@import 'components/form';
 // @import 'components/link';
 
 @import 'utilities/sizing';
