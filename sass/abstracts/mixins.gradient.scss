@@ -7,6 +7,11 @@
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
+
+  @media (min-resolution: 192dpi) and (min-width: $breakpoint-xs),
+          (-webkit-min-device-pixel-ratio: 2) and (min-width: $breakpoint-xs) {
+    background-attachment: scroll;
+  }
 }
 
 @mixin linear-gradient (){
