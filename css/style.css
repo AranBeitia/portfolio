@@ -438,7 +438,7 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   background-position: top;
   background-attachment: fixed; }
-  @media (min-resolution: 192dpi) and (min-width: 599px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 599px) {
+  @media screen and (min-resolution: 192dpi) and (max-width: 1023px), (-webkit-min-device-pixel-ratio: 2) and (max-width: 1023px) {
     .hero {
       background-attachment: scroll; } }
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
@@ -495,7 +495,7 @@ h1, h2, h3, h4, h5, h6 {
   background-attachment: fixed;
   transform: skewY(-7deg);
   margin-top: -10rem; }
-  @media (min-resolution: 192dpi) and (min-width: 599px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 599px) {
+  @media screen and (min-resolution: 192dpi) and (max-width: 1023px), (-webkit-min-device-pixel-ratio: 2) and (max-width: 1023px) {
     .section-background {
       background-attachment: scroll; } }
   .section-background > * {

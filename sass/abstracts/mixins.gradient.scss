@@ -8,8 +8,8 @@
     background-position: top;
     background-attachment: fixed;
 
-  @media (min-resolution: 192dpi) and (min-width: $breakpoint-xs),
-          (-webkit-min-device-pixel-ratio: 2) and (min-width: $breakpoint-xs) {
+  @media screen and (min-resolution: 192dpi) and (max-width: $breakpoint-sm),
+          (-webkit-min-device-pixel-ratio: 2) and (max-width: $breakpoint-sm) {
     background-attachment: scroll;
   }
 }
