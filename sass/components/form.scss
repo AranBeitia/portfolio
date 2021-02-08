@@ -5,7 +5,7 @@
     rgba($color-white, .9) 50%,
     transparent 50%
   ),
-    url($image-path + 'contactBg.jpg');
+    url('#{$image-path}contactBg.jpg');
   background-size: 100%;
   background-position: center;
   border-radius: 3px;
@@ -18,7 +18,7 @@
     rgba($color-white, .9) 65%,
     transparent 65%
     ),
-    url($image-path + 'contactBg.jpg');
+    url('#{$image-path}contactBg.jpg');
     background-size: cover;
   }
 
@@ -28,7 +28,7 @@
       rgba($color-white, .9) 0%,
       rgba($color-white, .9) 100%
     ),
-    url($image-path + 'contactBg.jpg');
+    url('#{$image-path}contactBg.jpg');
     background-size: cover;
   }
 

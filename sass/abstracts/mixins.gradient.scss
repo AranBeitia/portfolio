@@ -14,10 +14,10 @@
   }
 }
 
-@mixin linear-gradient (){
-  background: linear-gradient(
+@mixin linear-gradient ($color-from: $color-primary-light, $color-to: $color-primary-dark){
+  background-image: linear-gradient(
     to right bottom,
-    $color-primary-light,
-    $color-primary-dark
+    $color-from,
+    $color-to
   );
 }

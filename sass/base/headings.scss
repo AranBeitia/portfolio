@@ -26,22 +26,15 @@ h6 {
   @extend .text-body-main-bold;
 }
 
-.heading-secondary {
+.heading-gradient {
   display: inline-block;
   text-transform: uppercase;
-  background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+  @include linear-gradient;
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: .2rem;
-  transition: all .2s;
 
   &.--light {
-    background-image: linear-gradient(to right, $color-primary-light, $color-white);
+    @include linear-gradient($color-primary-light, $color-white);
   }
-}
-
-.subtitle {
-  margin-top: 1rem;
-  font-weight: $font-weight-bold;
-  color: $color-primary;
 }

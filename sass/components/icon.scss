@@ -1,0 +1,8 @@
+.icon {
+  display: inline-block;
+  font-size: 6rem;
+  padding: 1rem;
+  @include linear-gradient;
+  -webkit-background-clip: text;
+  color: transparent;
+}

@@ -1,8 +1,8 @@
-$font-primary-path: "../../assets/fonts/";
+$font-primary-path: "../../assets/fonts";
 
 @font-face {
   font-family: $asset-font-primary;
-  src: url($font-primary-path + "Lato-Thin.ttf") format("truetype");
+  src: url("#{$font-primary-path }/Lato-Thin.ttf") format("truetype");
   font-weight: $font-weight-thin;
   font-style: normal;
   font-display: swap;
@@ -10,7 +10,7 @@ $font-primary-path: "../../assets/fonts/";
 
 @font-face {
   font-family: $asset-font-primary;
-  src: url($font-primary-path + "Lato-Light.ttf") format("truetype");
+  src: url("#{$font-primary-path }/Lato-Light.ttf") format("truetype");
   font-weight: $font-weight-light;
   font-style: normal;
   font-display: swap;
@@ -18,7 +18,7 @@ $font-primary-path: "../../assets/fonts/";
 
 @font-face {
   font-family: $asset-font-primary;
-  src: url($font-primary-path + "Lato-Regular.ttf") format("truetype");
+  src: url("#{$font-primary-path }/Lato-Regular.ttf") format("truetype");
   font-weight: $font-weight-regular;
   font-style: normal;
   font-display: swap;
@@ -26,7 +26,7 @@ $font-primary-path: "../../assets/fonts/";
 
 @font-face {
   font-family: $asset-font-primary;
-  src: url($font-primary-path + "Lato-Bold.ttf") format("truetype");
+  src: url("#{$font-primary-path }/Lato-Bold.ttf") format("truetype");
   font-weight: $font-weight-bold;
   font-style: normal;
   font-display: swap;
@@ -34,7 +34,7 @@ $font-primary-path: "../../assets/fonts/";
 
 @font-face {
   font-family: $asset-font-primary;
-  src: url($font-primary-path + "Lato-Black.ttf") format("truetype");
+  src: url("#{$font-primary-path }/Lato-Black.ttf") format("truetype");
   font-weight: $font-weight-black;
   font-style: normal;
   font-display: swap;

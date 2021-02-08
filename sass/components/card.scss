@@ -88,35 +88,35 @@
     border-top-right-radius: 5px;
 
     &--1 {
-      background-image: url($image-path + 'web/axaHealthkeeper.jpg');
+      background-image: url('#{$image-path}web/axaHealthkeeper.jpg');
     }
 
     &--2 {
-      background-image: url($image-path + 'web/myEasySante.jpg');
+      background-image: url('#{$image-path}web/myEasySante.jpg');
     }
 
     &--3 {
-      background-image: url($image-path + 'web/dtw.jpg');
+      background-image: url('#{$image-path}web/dtw.jpg');
     }
 
     &--4 {
-      background-image: url($image-path + 'web/veInteractive.jpg');
+      background-image: url('#{$image-path}web/veInteractive.jpg');
     }
 
     &--5 {
-      background-image: url($image-path + 'web/surePlanet.jpg');
+      background-image: url('#{$image-path}web/surePlanet.jpg');
     }
 
     &--6 {
-      background-image: url($image-path + 'web/novocal.jpg');
+      background-image: url('#{$image-path}web/novocal.jpg');
     }
     
     &--7 {
-      background-image: url($image-path + 'web/metaposta.jpg');
+      background-image: url('#{$image-path}web/metaposta.jpg');
     }
 
     &--8 {
-      background-image: url($image-path + 'web/miConvenio.jpg');
+      background-image: url('#{$image-path}web/miConvenio.jpg');
     }
   }
 
@@ -173,21 +173,12 @@
     line-height: 1.5;
   }
 }
-
-.feature-box {
-  background-color: rgba($color-white, .8);
-  font-size: 1.5rem;
+//skills
+.card-transparent {
+  @include flex(flex, start, center);
+  flex-direction: column;
   padding: 2.5rem;
-  text-align: center;
   border-radius: 3px;
+  background-color: rgba($color-white, .8);
   box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-  transition: transform .3s;
-
-  &__icon {
-    display: inline-block;
-    font-size: 6rem;
-    background-image: linear-gradient(to right, $color-primary-light, $color-primary);
-    -webkit-background-clip: text;
-    color: transparent;
-  }
 }
