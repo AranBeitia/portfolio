@@ -1,0 +1,12 @@
+.link {
+  @include flex(flex, start, center);
+  text-decoration: none;
+  color: $color-primary-dark;
+
+  &:hover {
+    text-decoration: none;
+    color: $color-primary;
+    color: var(--color-primary);
+  }
+}
+

@@ -1,6 +1,6 @@
-
 $font-size-base: 16px;
 $font-size-base-mobile: 14px;
+$font-color-base: $color-grey;
 
 $weights: (
   thin: $font-weight-thin,
@@ -20,7 +20,7 @@ body {
   font-family: $asset-font-primary;
   font-size: $font-size-base;
   line-height: 28px;
-  color: $color-grey;
+  color: $font-color-base;
 
   @include is-mobile {
     font-size: $font-size-base-mobile;

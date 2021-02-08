@@ -3,9 +3,9 @@
 @font-face {
   font-family: '#{$icomoon-font-family}';
   src:
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?61p6f4') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?61p6f4') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?61p6f4##{$icomoon-font-family}') format('svg');
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?wx5pad') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?wx5pad') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?wx5pad##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -26,6 +26,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.aran-icon-domestika-brands {
+  &:before {
+    content: $aran-icon-domestika-brands; 
+  }
+}
 .aran-icon-envelope-solid {
   &:before {
     content: $aran-icon-envelope-solid; 

@@ -1,0 +1,10 @@
+.list {
+  list-style: none;
+
+  &.--horizintal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+

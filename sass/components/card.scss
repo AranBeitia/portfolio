@@ -36,6 +36,7 @@
       flex-direction: column;
       padding: 2rem;
       transform: rotateY(-180deg);
+      @include linear-gradient($color-primary-light, $color-primary-dark);
 
       @include is-tablet-landscape {
         margin-top: -5rem;
@@ -43,25 +44,8 @@
         clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
       }
 
-      &-primary {
-        background-image: linear-gradient(
-          to right bottom,
-          $color-primary-light,
-          $color-primary-dark);
-      }
-
-      &-secondary {
-        background-image: linear-gradient(
-          to right bottom,
-          $color-secondary-light,
-          $color-secondary-dark);
-      }
-
-      &-tertiary {
-        background-image: linear-gradient(
-          to right bottom,
-          $color-tertiary-light,
-          $color-tertiary-dark);
+      @include is-mobile {
+        padding: 1rem;
       }
     }
   }
@@ -136,33 +120,9 @@
 
   &__heading-span {
     padding: 1rem 1.5rem;
-    background-image: linear-gradient(
-      to right bottom,
-      rgba($color-primary-light, .85), 
-      rgba($color-primary-dark, .85));
+    @include linear-gradient(rgba($color-tertiary-light, .85), rgba($color-tertiary-dark, .85));
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
-
-    &--1 {
-      background-image: linear-gradient(
-        to right bottom,
-        rgba($color-primary-light, .85), 
-        rgba($color-primary-dark, .85));
-    }
-
-    &--2 {
-      background-image: linear-gradient(
-        to right bottom,
-        rgba($color-secondary-light, .85), 
-        rgba($color-secondary-dark, .85));
-    }
-
-    &--3 {
-      background-image: linear-gradient(
-        to right bottom,
-        rgba($color-tertiary-light, .85), 
-        rgba($color-tertiary-dark, .85));
-    }
   }
 
   &__description {
