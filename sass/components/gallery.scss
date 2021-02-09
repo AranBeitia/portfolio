@@ -1,22 +1,56 @@
 //skills
+.gallery-overlap {
+  position: relative;
+
+  &__img {
+    position: absolute;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+    outline-offset: 1.5rem;
+    z-index: 1;
+    transition: all .2s;
+
+    &.--top-left {
+      top: -7rem;
+      left: 0;
+    }
+
+    &.--center {
+      top: 10rem;
+      left: 15%;
+    }
+
+    &.--top-right {
+      top: -2rem;
+      right: 10%;
+    }
+
+    &:hover {
+      outline: 1.5rem solid $color-primary;
+      transform: scale(1.05) translateY(-.5rem);
+      box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+      z-index: 2;
+    }
+  }
+
+}
 .composition {
   position: relative;
 
   &__photo {
-    position: absolute;
-    width: 55%;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
-    border-radius: 2px;
-    transition: all .2s;
-    z-index: 1;
-    outline-offset: 2rem;
+    // position: absolute;
+    // box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+    // border-radius: 2px;
+    // transition: all .2s;
+    // z-index: 1;
+    // outline-offset: 2rem;
 
-    @include is-tablet-landscape {
-      float: left;
-      position: relative;
-      width: 33.3%;
-      box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
-    }
+    // @include is-tablet-landscape {
+    //   float: left;
+    //   position: relative;
+    //   //width: 33.3%;
+    //   box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
+    // }
 
     &--p1 {
       top: -2rem;
@@ -28,7 +62,7 @@
       }
     }
 
-    &--p2 {
+    &--p3 {
       top: 2rem;
       right: 0;
 
@@ -39,7 +73,7 @@
       }
     }
 
-    &--p3 {
+    &--p2 {
       top: 10rem;
       left: 20%;
 
