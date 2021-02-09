@@ -498,6 +498,12 @@ h1, h2, h3, h4, h5, h6 {
       background-attachment: scroll; } }
   .section-background > * {
     transform: skewY(7deg); }
+  @media screen and (max-width: 1024px) {
+    .section-background {
+      transform: skewY(-12deg);
+      margin-top: -10rem; }
+      .section-background > * {
+        transform: skewY(12deg); } }
 
 .section-gradient {
   padding: 10rem 0;
@@ -713,6 +719,9 @@ h1, h2, h3, h4, h5, h6 {
       @media screen and (max-width: 1024px) {
         .gallery-overlap__img.--top-left {
           top: 0; } }
+      @media screen and (max-width: 600px) {
+        .gallery-overlap__img.--top-left {
+          top: -3rem; } }
     .gallery-overlap__img.--center {
       top: -2rem;
       left: 20%;
@@ -720,6 +729,9 @@ h1, h2, h3, h4, h5, h6 {
       @media screen and (max-width: 1024px) {
         .gallery-overlap__img.--center {
           top: 10rem; } }
+      @media screen and (max-width: 600px) {
+        .gallery-overlap__img.--center {
+          display: none; } }
     .gallery-overlap__img.--top-right {
       top: -10rem;
       right: 0%;
@@ -728,6 +740,10 @@ h1, h2, h3, h4, h5, h6 {
         .gallery-overlap__img.--top-right {
           top: 15rem;
           left: 15%; } }
+      @media screen and (max-width: 600px) {
+        .gallery-overlap__img.--top-right {
+          top: -5rem;
+          left: 50%; } }
     .gallery-overlap__img:hover {
       outline: 1.5rem solid #F721E4;
       transform: scale(1.05) translateY(-0.5rem);
@@ -737,9 +753,6 @@ h1, h2, h3, h4, h5, h6 {
         .gallery-overlap__img:hover {
           outline: none;
           transform: none; } }
-    @media all and (max-width: 650px) {
-      .gallery-overlap__img {
-        display: none; } }
 
 .modal {
   position: fixed;
@@ -876,7 +889,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 8rem !important; }
   @media screen and (max-width: 1024px) {
     .u-margin-bottom-big {
-      margin-bottom: 5rem; } }
+      margin-bottom: 4rem !important; } }
 
 .u-margin-top-big {
   margin-top: 8rem !important; }

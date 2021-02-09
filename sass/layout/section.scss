@@ -43,6 +43,15 @@
   & > * {
     transform: skewY(7deg);
   }
+
+  @include is-tablet-landscape {
+    transform: skewY(-12deg);
+    margin-top: -10rem;
+
+    & > * {
+      transform: skewY(12deg);
+    }
+  }
 }
 
 .section-gradient {
