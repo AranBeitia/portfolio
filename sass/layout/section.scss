@@ -20,13 +20,13 @@
   background-color: var(--color-grey-light);
 
   &.--low {
-    padding: 25rem 0;
+    padding: 20rem 0 30rem;
     margin-top: -25vh;
   }
 
   &.--high {
     padding: 18rem 0 8rem 0;
-    margin-top: -10rem;
+    margin-top: -12rem;
 
     @include is-tablet-landscape {
         padding: 15rem 0 5rem 0;
@@ -38,7 +38,7 @@
   padding: 10rem 0;
   @include linear-gradient-image($image-path + 'web.jpg');
   transform: skewY(-7deg);
-  margin-top: -10rem;
+  margin-top: -12rem;
 
   & > * {
     transform: skewY(7deg);

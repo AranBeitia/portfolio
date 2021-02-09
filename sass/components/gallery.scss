@@ -11,18 +11,24 @@
     transition: all .2s;
 
     &.--top-left {
-      top: -7rem;
+      top: -4rem;
       left: 0;
+      width: 45%;
+      @include is-tablet-landscape { top: 0; }
     }
 
     &.--center {
-      top: 10rem;
-      left: 15%;
+      top: -2rem;
+      left: 20%;
+      width: 75%;
+      @include is-tablet-landscape { top: 10rem; }
     }
 
     &.--top-right {
-      top: -2rem;
-      right: 10%;
+      top: -10rem;
+      right: 0%;
+      width: 45%;
+      @include is-tablet-landscape { top: 15rem; left: 15%; }
     }
 
     &:hover {
@@ -30,71 +36,79 @@
       transform: scale(1.05) translateY(-.5rem);
       box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
       z-index: 2;
-    }
-  }
 
-}
-.composition {
-  position: relative;
-
-  &__photo {
-    // position: absolute;
-    // box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
-    // border-radius: 2px;
-    // transition: all .2s;
-    // z-index: 1;
-    // outline-offset: 2rem;
-
-    // @include is-tablet-landscape {
-    //   float: left;
-    //   position: relative;
-    //   //width: 33.3%;
-    //   box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
-    // }
-
-    &--p1 {
-      top: -2rem;
-      left: 0;
-
-      @include is-tablet-landscape {
-        top: 0;
-        transform: scale(1.2);
+      @include is-tablet-portrait {
+        outline: none;
+        transform: none;
       }
     }
 
-    &--p3 {
-      top: 2rem;
-      right: 0;
-
-      @include is-tablet-landscape {
-        top: -1rem;
-        transform: scale(1.3);
-        z-index: 2;
-      }
+    @media all and (max-width: 650px) {
+      display: none;
     }
-
-    &--p2 {
-      top: 10rem;
-      left: 20%;
-
-      @include is-tablet-landscape {
-        top: 1rem;
-        left: 0;
-        transform: scale(1.1);
-      }
-    }
-
-    &:hover {
-      outline: 1.5rem solid $color-primary;
-      transform: scale(1.05) translateY(-.5rem);
-      box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
-      z-index: 2;
-    }
-  }
-
-  &:hover &__photo:not(:hover) {
-    transform: scale(.9);
   }
 }
 
 
+// .composition {
+//   position: relative;
+
+//   &__photo {
+//     // position: absolute;
+//     // box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+//     // border-radius: 2px;
+//     // transition: all .2s;
+//     // z-index: 1;
+//     // outline-offset: 2rem;
+
+//     // @include is-tablet-landscape {
+//     //   float: left;
+//     //   position: relative;
+//     //   //width: 33.3%;
+//     //   box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
+//     // }
+
+//     // &--p1 {
+//     //   top: -2rem;
+//     //   left: 0;
+
+//     //   @include is-tablet-landscape {
+//     //     top: 0;
+//     //     transform: scale(1.2);
+//     //   }
+//     // }
+
+//     // &--p3 {
+//     //   top: 2rem;
+//     //   right: 0;
+
+//     //   @include is-tablet-landscape {
+//     //     top: -1rem;
+//     //     transform: scale(1.3);
+//     //     z-index: 2;
+//     //   }
+//     // }
+
+//     // &--p2 {
+//     //   top: 10rem;
+//     //   left: 20%;
+
+//     //   @include is-tablet-landscape {
+//     //     top: 1rem;
+//     //     left: 0;
+//     //     transform: scale(1.1);
+//     //   }
+//     // }
+
+//     &:hover {
+//       outline: 1.5rem solid $color-primary;
+//       transform: scale(1.05) translateY(-.5rem);
+//       box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+//       z-index: 2;
+//     }
+//   }
+
+//   &:hover &__photo:not(:hover) {
+//     transform: scale(.9);
+//   }
+// }
