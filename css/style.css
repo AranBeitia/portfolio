@@ -721,7 +721,8 @@ h1, h2, h3, h4, h5, h6 {
           top: 0; } }
       @media screen and (max-width: 600px) {
         .gallery-overlap__img.--top-left {
-          top: -3rem; } }
+          top: -3rem;
+          width: auto; } }
     .gallery-overlap__img.--center {
       top: -2rem;
       left: 20%;
@@ -743,7 +744,8 @@ h1, h2, h3, h4, h5, h6 {
       @media screen and (max-width: 600px) {
         .gallery-overlap__img.--top-right {
           top: -5rem;
-          left: 50%; } }
+          left: 50%;
+          width: auto; } }
     .gallery-overlap__img:hover {
       outline: 1.5rem solid #F721E4;
       transform: scale(1.05) translateY(-0.5rem);

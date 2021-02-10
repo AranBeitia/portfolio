@@ -17,6 +17,7 @@
       @include is-tablet-landscape { top: 0; }
       @include is-tablet-portrait {
         top: -3rem;
+        width: auto;
       }
     }
 
@@ -38,6 +39,7 @@
       @include is-tablet-portrait {
         top: -5rem;
         left: 50%;
+        width: auto;
       }
     }
 
@@ -54,3 +56,4 @@
     }
   }
 }
+
