@@ -712,8 +712,8 @@ h1, h2, h3, h4, h5, h6 {
   grid-template-rows: 6rem 3rem auto 3rem; }
   @media screen and (max-width: 1024px) {
     .irregular-grid {
-      grid-template-columns: 2fr 2fr 1fr 2fr 2fr;
-      grid-template-rows: 2rem 1fr 3rem 3rem auto 2rem; } }
+      grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+      grid-template-rows: 2rem 1fr 3rem 3rem auto; } }
   .irregular-grid__text {
     grid-column: 1;
     grid-row: 2;
@@ -729,7 +729,9 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     outline-offset: 1.5rem;
     z-index: 1;
-    transition: all .2s; }
+    transition: all .2s;
+    max-width: 100%;
+    width: auto; }
     .irregular-grid__img:hover {
       outline: 1.5rem solid #F721E4;
       transform: scale(1.05) translateY(-0.5rem);
@@ -753,13 +755,16 @@ h1, h2, h3, h4, h5, h6 {
         .irregular-grid__img.--img-2 {
           grid-column: 2 / span 3;
           grid-row: 5; } }
+      @media screen and (max-width: 600px) {
+        .irregular-grid__img.--img-2 {
+          display: none; } }
     .irregular-grid__img.--img-3 {
       grid-column: 5;
       grid-row: 1; }
       @media screen and (max-width: 1024px) {
         .irregular-grid__img.--img-3 {
-          grid-column: 4 / span 2;
-          grid-row: 3; } }
+          grid-row: 3;
+          grid-column: 4 / 6; } }
 
 .modal {
   position: fixed;
