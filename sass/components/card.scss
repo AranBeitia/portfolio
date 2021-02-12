@@ -63,47 +63,6 @@
   }
 
   //FRONT SIDE STYLING
-  &__picture {
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-blend-mode: screen;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 5px;
-
-    &--1 {
-      background-image: url('#{$image-path}web/axaHealthkeeper.jpg');
-    }
-
-    &--2 {
-      background-image: url('#{$image-path}web/myEasySante.jpg');
-    }
-
-    &--3 {
-      background-image: url('#{$image-path}web/dtw.jpg');
-    }
-
-    &--4 {
-      background-image: url('#{$image-path}web/veInteractive.jpg');
-    }
-
-    &--5 {
-      background-image: url('#{$image-path}web/surePlanet.jpg');
-    }
-
-    &--6 {
-      background-image: url('#{$image-path}web/novocal.jpg');
-    }
-    
-    &--7 {
-      background-image: url('#{$image-path}web/metaposta.jpg');
-    }
-
-    &--8 {
-      background-image: url('#{$image-path}web/miConvenio.jpg');
-    }
-  }
-
   &__heading {
     position: absolute;
     bottom: 2rem;

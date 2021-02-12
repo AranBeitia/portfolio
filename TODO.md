@@ -2,7 +2,7 @@ FUNCTIONALITIES:
 1- navigation menu - TESTING
 2- modal gallery - TESTING
 3- webpack
-4- soft scroll
+4- smooth scroll - DONE
 5- contact form
 
 CODE:

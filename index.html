@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="js/nav.js" defer></script>
   <script src="js/modal.js" defer></script>
-  <!-- <script src="js/app.js" defer></script> -->
+  <script src="js/app.js" defer></script>
 
   <link rel="shortcut icon" type="image/png" href="favicon.png">
   <title>Arantza Beitia</title>
@@ -47,13 +47,14 @@
   <main>
     <section class="section-light --low" id="about">
       <div class="text-center">
-        <h2 class="heading-gradient">A little bit about me</h2>
+        <h2 class="heading-gradient hidden">A little bit about me</h2>
       </div>
       <div class="page-container">
         <div class="irregular-grid">
           <section class="irregular-grid__text">
-            <h3 class="uppercase">I code wonderfully simple interfaces, and I love what I do</h3>
-            <p>Since I started 10 years ago, I have worked for <strong class="text-strong">consultants</strong>, for
+            <h3 class="uppercase hidden">I code wonderfully simple interfaces, and I love what I do</h3>
+            <p class="hidden">Since I started 10 years ago, I have worked for <strong
+                class="text-strong">consultants</strong>, for
               <strong class="text-strong">startups</strong>, <strong class="text-strong">international
                 companies</strong>, as a
               <strong class="text-strong">freelancer</strong> and even for <strong class="text-strong">workshops on new
@@ -63,7 +64,7 @@
               management, positioning and graphic design tasks.
             </p>
 
-            <p>I studied <strong class="text-strong">bachelor’s degree of Fine Arts</strong> and <strong
+            <p class="hidden">I studied <strong class="text-strong">bachelor’s degree of Fine Arts</strong> and <strong
                 class="text-strong">senior technician web application development</strong> in Bilbao. I’m interested in
               the whole visual part of the web, its
               <strong class="text-strong">usability, performance and accesibility</strong>. Also I’m interested in
@@ -71,18 +72,18 @@
               roads and punk rock music.
             </p>
           </section>
-          <img src="assets/img/notre-damme.jpg" class="irregular-grid__img --img-1" alt="Notre Damme" />
-          <img src="assets/img/triumph.jpg" class="irregular-grid__img --img-2" alt="Triumph" />
-          <img src="assets/img/mirinda.jpg" class="irregular-grid__img --img-3" alt="Mirinda" />
+          <img src="assets/img/notre-damme.jpg" class="hidden irregular-grid__img --img-1" alt="Notre Damme" />
+          <img src="assets/img/triumph.jpg" class="hidden irregular-grid__img --img-2" alt="Triumph" />
+          <img src="assets/img/mirinda.jpg" class="hidden irregular-grid__img --img-3" alt="Mirinda" />
         </div>
       </div>
     </section>
     <section class="section-background" id="skills">
       <div class="text-center u-margin-bottom-big">
-        <h2 class="[ heading-gradient --light ]">Skills</h2>
+        <h2 class="[ heading-gradient --light ] hidden">Skills</h2>
       </div>
       <div class="grid-2-to-1 page-container">
-        <article class="card-transparent">
+        <article class="card-transparent hidden">
           <i class="icon aran-icon-laptop-code-solid"></i>
           <h3 class="uppercase">Front end</h3>
           <p class="text-center">I like to code from scratch, and I enjoy seeing the ideas that I have brought to life
@@ -98,7 +99,7 @@
             <li>Terminal</li>
           </ul>
         </article>
-        <article class="card-transparent">
+        <article class="card-transparent hidden">
           <i class="icon aran-icon-pen-fancy-solid"></i>
           <h3 class="uppercase">Design</h3>
           <p class="text-center">Sometimes I do design tasks, which are motivating and relaxing moments for me</p>
@@ -117,14 +118,14 @@
     </section>
     <section class="section-light --high" id="portfolio">
       <div class="text-center u-margin-bottom-big">
-        <h2 class="heading-gradient">Last projects</h2>
-        <p>Some of the projects I have been part of</p>
+        <h2 class="heading-gradient hidden">Last projects</h2>
+        <p class="hidden">Some of the projects I have been part of</p>
       </div>
       <div class="page-container">
         <div class="grid-auto-to-1">
-          <div class="card">
+          <div class="card hidden">
             <div class="[ card__side card__side--front ]">
-              <div class="[ card__picture card__picture--1 ]">
+              <div class="[ web-img --image-1 ]">
               </div>
               <h4 class="card__heading">
                 <span class="card__heading-span">Axa healthkeeper</span>
@@ -137,9 +138,9 @@
               <button class="[ btn btn--white ] modal-trigger" data-modal-trigger="axa-hk">View</button>
             </div>
           </div>
-          <div class="card">
+          <div class="card hidden">
             <div class="[ card__side card__side--front ]">
-              <div class="[ card__picture card__picture--2 ]">
+              <div class="[ web-img --image-2 ]">
               </div>
               <h4 class="card__heading">
                 <span class="card__heading-span">My easy santé</span>
@@ -152,9 +153,9 @@
               <button class="[ btn btn--white ] modal-trigger" data-modal-trigger="axa-fr">View</button>
             </div>
           </div>
-          <div class="card">
+          <div class="card hidden">
             <div class="[ card__side card__side--front ]">
-              <div class="[ card__picture card__picture--3 ]">
+              <div class="[ web-img --image-3 ]">
               </div>
               <h4 class="card__heading">
                 <span class="card__heading-span">Donostia Tech Week</span>
@@ -167,9 +168,9 @@
               <button class="[ btn btn--white ] modal-trigger" data-modal-trigger="donostia-tw">View</button>
             </div>
           </div>
-          <div class="card">
+          <div class="card hidden">
             <div class="[ card__side card__side--front ]">
-              <div class="[ card__picture card__picture--4 ]">
+              <div class="[ web-img --image-4 ]">
               </div>
               <h4 class="card__heading">
                 <span class="card__heading-span">Ve interactive</span>
@@ -182,9 +183,9 @@
               <button class="[ btn btn--white ] modal-trigger" data-modal-trigger="ve-interactive">View</button>
             </div>
           </div>
-          <div class="card">
+          <div class="card hidden">
             <div class="[ card__side card__side--front ]">
-              <div class="[ card__picture card__picture--5 ]">
+              <div class="[ web-img --image-5 ]">
               </div>
               <h4 class="card__heading">
                 <span class="card__heading-span">Sure Planet</span>
@@ -195,9 +196,9 @@
               <button class="[ btn btn--white ] modal-trigger" data-modal-trigger="sure-planet">View</button>
             </div>
           </div>
-          <div class="card">
+          <div class="card hidden">
             <div class="[ card__side card__side--front ]">
-              <div class="[ card__picture card__picture--6 ]">
+              <div class="[ web-img --image-6 ]">
               </div>
               <h4 class="card__heading">
                 <span class="card__heading-span">Novocal</span>
@@ -208,9 +209,9 @@
               <button class="[ btn btn--white ] modal-trigger" data-modal-trigger="novocal">Ver</button>
             </div>
           </div>
-          <div class="card">
+          <div class="card hidden">
             <div class="[ card__side card__side--front ]">
-              <div class="[ card__picture card__picture--7 ]">
+              <div class="[ web-img --image-7 ]">
               </div>
               <h4 class="card__heading">
                 <span class="card__heading-span">Metaposta</span>
@@ -222,9 +223,9 @@
               <button class="[ btn btn--white ] modal-trigger" data-modal-trigger="metaposta">View</button>
             </div>
           </div>
-          <div class="card">
+          <div class="card hidden">
             <div class="[ card__side card__side--front ]">
-              <div class="[ card__picture card__picture--8 ]">
+              <div class="[ web-img --image-8 ]">
               </div>
               <h4 class="card__heading">
                 <span class="card__heading-span">Mi convenio</span>
@@ -243,22 +244,22 @@
       <div class="page-container">
         <div class="contact">
           <div class="contact__form">
-            <h2 class="heading-gradient">Contact</h2>
-            <p class="margin-tb-1">Write me if you want to talk</p>
+            <h2 class="heading-gradient hidden">Contact</h2>
+            <p class="margin-tb-1 hidden">Write me if you want to talk</p>
             <a href="mailto:arantza.beitia@gmail.com?Subject=Hola" data-text="arantza.beitia@gmail.com" target="_blank"
-              class="link"><i class="[ icon --small ] aran-icon-envelope-solid"></i>arantza.beitia@gmail.com</a>
+              class="link hidden"><i class="[ icon --small ] aran-icon-envelope-solid"></i>arantza.beitia@gmail.com</a>
             <ul class="list --horizontal">
               <li>
-                <a href="https://www.linkedin.com/in/arantza-beitia-14672b23/" class="link" target="_blank">
+                <a href="https://www.linkedin.com/in/arantza-beitia-14672b23/" class="link hidden" target="_blank">
                   <i class="[ icon --small ] aran-icon-linkedin-in-brands"></i>
                   linkedin
                 </a>
               </li>
               <li>
-                <a href="https://www.domestika.org/es/arantzabeitia" class="link" target="_blank">
+                <a href="https://www.domestika.org/es/arantzabeitia" class="link hidden" target="_blank">
                   <i class="[ icon --small ] aran-icon-domestika-brands"></i>domestika</a>
               </li>
-              <li><a href="https://github.com/AranBeitia" class="link" target="_blank"><i
+              <li><a href="https://github.com/AranBeitia" class="link hidden" target="_blank"><i
                     class="[ icon --small ] aran-icon-github-alt-brands"></i>github</a></li>
             </ul>
           </div>
@@ -267,8 +268,8 @@
     </section>
   </main>
   <footer class="footer">
-    <img src="assets/img/logo.svg" alt="Logo" class="footer__logo">
-    <p class="footer__copyright">&copy; 2021 <a href="#intro" class="footer__link">Arantza Beitia</a></p>
+    <img src="assets/img/logo.svg" alt="Logo" class="footer__logo hidden">
+    <p class="footer__copyright">&copy; 2021 <a href="#intro" class="footer__link hidden">Arantza Beitia</a></p>
   </footer>
 
   <section class="modal">

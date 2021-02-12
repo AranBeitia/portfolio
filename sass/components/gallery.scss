@@ -79,3 +79,19 @@
     }
   }
 }
+
+//portfolio gallery
+.web-img {
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: screen;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 5px;
+
+  @for $i from 1 through 8 {
+    &.--image-#{$i}{
+      background-image: url('#{$image-path}web/img-#{$i}.jpg');
+    }
+  }
+}

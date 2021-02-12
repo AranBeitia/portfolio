@@ -61,6 +61,19 @@
     opacity: 1;
     transform: translateY(0); } }
 
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.7, 0.7); }
+  to {
+    opacity: 1; } }
+
+.fade-in-element {
+  animation: fade-in 1.4s; }
+
+.hidden {
+  opacity: 0; }
+
 @font-face {
   font-family: "Aran-portfolio";
   src: url("fonts/Aran-portfolio.ttf?wx5pad") format("truetype"), url("fonts/Aran-portfolio.woff?wx5pad") format("woff"), url("fonts/Aran-portfolio.svg?wx5pad#Aran-portfolio") format("svg");
@@ -278,7 +291,8 @@ h5 {
       font-weight: 400 !important; } }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   box-sizing: border-box;
@@ -650,29 +664,6 @@ h1, h2, h3, h4, h5, h6 {
         transform: rotateY(0); } }
   .card:hover .card__side--back {
     transform: rotateY(0); }
-  .card__picture {
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-blend-mode: screen;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 5px; }
-    .card__picture--1 {
-      background-image: url("../../assets/img/web/axaHealthkeeper.jpg"); }
-    .card__picture--2 {
-      background-image: url("../../assets/img/web/myEasySante.jpg"); }
-    .card__picture--3 {
-      background-image: url("../../assets/img/web/dtw.jpg"); }
-    .card__picture--4 {
-      background-image: url("../../assets/img/web/veInteractive.jpg"); }
-    .card__picture--5 {
-      background-image: url("../../assets/img/web/surePlanet.jpg"); }
-    .card__picture--6 {
-      background-image: url("../../assets/img/web/novocal.jpg"); }
-    .card__picture--7 {
-      background-image: url("../../assets/img/web/metaposta.jpg"); }
-    .card__picture--8 {
-      background-image: url("../../assets/img/web/miConvenio.jpg"); }
   .card__heading {
     position: absolute;
     bottom: 2rem;
@@ -765,6 +756,30 @@ h1, h2, h3, h4, h5, h6 {
         .irregular-grid__img.--img-3 {
           grid-row: 3;
           grid-column: 4 / 6; } }
+
+.web-img {
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: screen;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 5px; }
+  .web-img.--image-1 {
+    background-image: url("../../assets/img/web/img-1.jpg"); }
+  .web-img.--image-2 {
+    background-image: url("../../assets/img/web/img-2.jpg"); }
+  .web-img.--image-3 {
+    background-image: url("../../assets/img/web/img-3.jpg"); }
+  .web-img.--image-4 {
+    background-image: url("../../assets/img/web/img-4.jpg"); }
+  .web-img.--image-5 {
+    background-image: url("../../assets/img/web/img-5.jpg"); }
+  .web-img.--image-6 {
+    background-image: url("../../assets/img/web/img-6.jpg"); }
+  .web-img.--image-7 {
+    background-image: url("../../assets/img/web/img-7.jpg"); }
+  .web-img.--image-8 {
+    background-image: url("../../assets/img/web/img-8.jpg"); }
 
 .modal {
   position: fixed;
