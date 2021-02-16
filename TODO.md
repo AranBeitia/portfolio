@@ -4,6 +4,7 @@ FUNCTIONALITIES:
 3- webpack
 4- smooth scroll
 5- contact form
+6- Parallax
 
 CODE:
 1- unify tokens
