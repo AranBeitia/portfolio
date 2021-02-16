@@ -2,7 +2,7 @@ FUNCTIONALITIES:
 1- navigation menu - TESTING
 2- modal gallery - TESTING
 3- webpack
-4- smooth scroll - DONE
+4- smooth scroll
 5- contact form
 
 CODE:
@@ -10,4 +10,5 @@ CODE:
 2- improve grid layout - DONE
 3- fonts and typography -INPROGRESS
 4- assets path
-5- images
+5- images (SEO)
+6- swipe gallery

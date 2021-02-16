@@ -21,8 +21,8 @@ function bindModalEvents() {
   const close = document.getElementsByClassName('modal__close-button')[0]
 
   close.addEventListener('click', () => modal.classList.remove('--open'))
-  modal.addEventListener('click', () => modal.classList.remove('--open'))
   wrapper.addEventListener('click', (event) => event.stopPropagation())
+  modal.addEventListener('click', () => modal.classList.remove('--open'))
 }
 
 function getPortfolio () {

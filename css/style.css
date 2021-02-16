@@ -5,8 +5,6 @@
 *::after {
   padding: 0;
   margin: 0;
-  font: inherit;
-  font-size: 100%;
   border: 0; }
 
 * {
@@ -61,15 +59,15 @@
     opacity: 1;
     transform: translateY(0); } }
 
-@keyframes fade-in {
-  from {
+@keyframes fadeIn {
+  0% {
     opacity: 0;
     transform: scale(0.7, 0.7); }
-  to {
+  100% {
     opacity: 1; } }
 
 .fade-in-element {
-  animation: fade-in 1.4s; }
+  animation: fadeIn 1.4s; }
 
 .hidden {
   opacity: 0; }
@@ -176,7 +174,7 @@ body {
   @media screen and (max-width: 600px) {
     body {
       font-size: 14px;
-      line-height: 20px; } }
+      line-height: 24px; } }
 
 .text-huge {
   font-size: 4.333rem !important;
@@ -291,8 +289,7 @@ h5 {
       font-weight: 400 !important; } }
 
 html {
-  font-size: 62.5%;
-  scroll-behavior: smooth; }
+  font-size: 62.5%; }
 
 body {
   box-sizing: border-box;
@@ -405,6 +402,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 3rem;
   font-weight: 300;
   padding: 1rem 2rem;
+  margin: 1rem;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
@@ -898,10 +896,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .list {
   list-style: none; }
-  .list.--horizintal {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; }
 
 .u-margin-bottom-small {
   margin-bottom: 1rem !important; }
