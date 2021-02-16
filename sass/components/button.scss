@@ -51,18 +51,4 @@
       background-color: $color-white;
     }
   }
-
-  &--magenta {
-    background-color: $color-primary-dark;
-    color: $color-white;
-
-    &::after {
-      background-color: $color-primary-dark;
-    }
-  }
-
-  &--animated {
-    animation: moveInBottom .5s ease-out .75;
-    animation-fill-mode: forwards;
-  }
 }

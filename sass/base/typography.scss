@@ -28,17 +28,6 @@ body {
   }
 }
 
-$page-texts: (
-  'huge': (
-    'desktop': (4.333rem 82px 'bold'),
-    'mobile': (2.66rem 52px 'bold'),
-  ),
-  'page': (
-    'desktop': (2.66rem 54px 'bold'),
-    'mobile': (32px 38px 'bold'),
-  ),
-);
-
 $heading-texts: (
   'heading-main': (
     'desktop': (80px 86px 'black'),
@@ -85,13 +74,10 @@ $other-texts: (
 );
 
 $texts: map-merge(
-  $page-texts,
+  $heading-texts,
   map-merge(
-    $heading-texts,
-    map-merge(
-      $body-texts,
-      $other-texts
-    )
+    $body-texts,
+    $other-texts
   )
 );
 

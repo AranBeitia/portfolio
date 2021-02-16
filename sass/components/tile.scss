@@ -1,0 +1,85 @@
+.tile {
+  position: relative;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+  cursor: pointer;
+  height: 30rem;
+
+  &__image {
+    transition: transform 0.5s ease;
+    border-radius: 4px;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #333333;
+      opacity: 0.35;
+      transition: background-color 0.5s ease, opacity 0.5s ease;
+    }
+  }
+
+  &__content {
+    @include flex(flex, center, center);
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 5;
+    color: white;
+    transition: background-color .5s ease, transform .5s ease;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    color: $color-white;
+    padding: 1rem 1.5rem;
+    @include linear-gradient(rgba($color-primary-light, .85), rgba($color-primary-dark, .85));
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+
+  &__text {
+    width: 100%;
+    max-height: 0;
+    line-height: 1.5;
+    margin-top: .35rem;
+    text-align: center;
+    opacity: 0;
+    transition: max-height .5s ease, opacity .5s ease;
+  }
+
+  &:hover {
+    .tile__image::before {
+      opacity: .8;
+      @include linear-gradient($color-primary-light, $color-primary-dark);
+    }
+
+    .tile__text {
+      max-height: 15rem;
+      opacity: 1;
+    }
+  }
+
+  @include is-mobile {
+    margin: 0 1rem;
+    
+    .tile__image::before {
+      opacity: .8;
+      @include linear-gradient($color-primary-light, $color-primary-dark);
+    }
+
+    .tile__text {
+      max-height: 15rem;
+      opacity: 1;
+    }
+  }
+}

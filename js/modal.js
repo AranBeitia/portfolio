@@ -1,4 +1,4 @@
-const buttons = document.querySelectorAll('.modal-trigger[data-modal-trigger]')
+const buttons = document.querySelectorAll('[data-modal-trigger]')
 
 bindModalEvents()
 
