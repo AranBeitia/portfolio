@@ -1,3 +1,4 @@
+import portfolio from '../../portfolio.json'
 const buttons = document.querySelectorAll('[data-modal-trigger]')
 
 bindModalEvents()
@@ -26,19 +27,18 @@ function bindModalEvents() {
 }
 
 function getPortfolio () {
-  return fetch('portfolio.json')
-    .then(response => response.json())
-    .then(result => result)
-    .catch(error => console.log(error))
+  return Promise.resolve(portfolio)
 }
 
-async function renderPortfolio(dataId) {
-  const datos = await getPortfolio()
-  const dato = datos[dataId]
+ function renderPortfolio(jobId) {
+  return getPortfolio()
+  .then(jobs => { 
+    const job = jobs[jobId]
 
-  let html = `
-      <h2 class="text-center">${dato.title}</h2>
-      <img src="assets/img/web/${dato.imgUrl}" alt="${dato.title}" class="modal__image">
+    let html = `
+      <h2 class="text-center">${job.title}</h2>
+      <img src="images/content/web/${job.imgUrl}" alt="${job.title}" class="modal__image">
     `
-  document.getElementById('modal-content').innerHTML = html
+    document.getElementById('modal-content').innerHTML = html
+   })
 }

@@ -1,8 +1,8 @@
 /*:root*/
 :root {
-  --color-primary-light: #7A3559;
-  --color-primary: #F01B75;
-  --color-primary-dark: #120D3E;
+  --color-primary-light: #7a3559;
+  --color-primary: #F01b75;
+  --color-primary-dark: #120D3e;
 
   // --color-secondary-light: #99e688;
   // --color-secondary-dark: #1d6d0c;
@@ -26,9 +26,9 @@
 }
 
 // PATHS
-$image-path: "../images/content/";
-$font-path: "../fonts";
-$icon-path: "../fonts/icons";
+$image-path: '../images/content/';
+$font-path: '../fonts';
+$icon-path: '../fonts/icons';
 
 // COLORS
 // $color-primary-light: #ffd1fb;
@@ -39,11 +39,11 @@ $icon-path: "../fonts/icons";
 // $color-primary: #F721E4;
 // $color-primary-dark: #0C4290;
 
-$color-primary-light: #7A3559;
-$color-primary: #F01B75;
-$color-primary-dark: #120D3E;
+$color-primary-light: #7a3559;
+$color-primary: #f01b75;
+$color-primary-dark: #120d3e;
 
-$color-secondary: #9F6C73;
+$color-secondary: #9f6c73;
 
 $color-secondary-light: #99e688;
 $color-secondary-dark: #1d6d0c;
@@ -60,7 +60,7 @@ $color-white: #fff;
 $color-black: #000;
 
 // FONT
-$asset-font-primary: "Lato";
+$asset-font-primary: 'Lato';
 $font-size-title: 8rem;
 $font-size-header-1: 3.875rem;
 $font-size-header-2: 3rem;

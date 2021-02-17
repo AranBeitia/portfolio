@@ -1,16 +1,13 @@
-$size: 4rem;
+$size: 9.5rem;
+$size-sm: $size / 2;
+.logo {
+  height: $size;
 
-.logo-container {
-  position: absolute;
-  top: $size;
-  left: $size;
+  &.--small {
+    height: $size-sm;
+  }
 
   @include is-mobile {
-    top: $size / 2;
-    left: $size / 2;
+    height: $size-sm;
   }
-}
-
-.logo {
-  height: 6.5rem;
 }

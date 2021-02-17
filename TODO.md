@@ -13,3 +13,11 @@ CODE:
 4- assets path
 5- images (SEO)
 6- swipe gallery
+
+
+DUDAS:
+1 -  Evento en modal(propagation) - https://javascript.info/bubbling-and-capturing
+2 - .json ¿dónde??? - modal no funca (data/)
+5 - js funciones ejecucion - hoisting - https://developer.mozilla.org/es/docs/Glossary/Hoisting
+6 - jest - dom manipulation - https://jestjs.io/docs/en/tutorial-jquery
+https://www.valentinog.com/blog/jest/

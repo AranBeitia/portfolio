@@ -3,6 +3,7 @@ files:
   include: 'src/sass/**/*'
   ignore:
     - 'src/sass/main.scss'
+    - 'src/sass/icons/style.scss'
 
 rules:
   # Extends

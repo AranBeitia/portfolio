@@ -18,7 +18,11 @@
       "url": "https://pnikoloff.com"
     }
   ],
-  "dependencies": {},
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "core-js": "^3.8.3",
+    "regenerator-runtime": "^0.13.7"
+  },
   "devDependencies": {
     "@babel/core": "^7.12.16",
     "@babel/preset-env": "^7.12.16",
