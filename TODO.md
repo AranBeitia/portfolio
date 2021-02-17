@@ -7,7 +7,7 @@ FUNCTIONALITIES:
 6- Parallax
 
 CODE:
-1- unify tokens
+1- unify tokens - root
 2- improve grid layout - DONE
 3- fonts and typography -INPROGRESS
 4- assets path
