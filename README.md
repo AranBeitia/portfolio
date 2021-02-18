@@ -1,49 +1,8 @@
-# Webpack 5 Boilerplate Template
+# Personal portfolio
 
-![Maintenance](https://img.shields.io/maintenance/yes/2021?logo=github)
 ![webpack-current](https://img.shields.io/badge/webpack-v5.22.0-green?logo=webpack)
-![node-current (scoped)](https://img.shields.io/node/v/@weareathlon/frontend-webpack-boilerplate)
-[![Build Status](https://api.travis-ci.org/weareathlon/frontend-webpack-boilerplate.svg?branch=master)](https://travis-ci.org/weareathlon/frontend-webpack-boilerplate)
-[![GitHub Issues](https://img.shields.io/github/issues-raw/WeAreAthlon/frontend-webpack-boilerplate)](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/issues)
-[![Known Vulnerabilities](https://snyk.io/test/github/WeAreAthlon/frontend-webpack-boilerplate/badge.svg?targetFile=package.json)](https://snyk.io/test/github/WeAreAthlon/frontend-webpack-boilerplate?targetFile=package.json)
-[![devDependency Status](https://david-dm.org/WeAreAthlon/frontend-webpack-boilerplate/dev-status.svg)](https://david-dm.org/WeAreAthlon/frontend-webpack-boilerplate?type=dev)
-[![npm](https://img.shields.io/npm/dm/@weareathlon/frontend-webpack-boilerplate)](https://www.npmjs.com/package/@weareathlon/frontend-webpack-boilerplate)
-[![GitHub License](https://img.shields.io/github/license/WeAreAthlon/frontend-webpack-boilerplate)](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/blob/master/LICENSE)
 
-![Front-end Webpack Boilerplate](https://repository-images.githubusercontent.com/96102257/4be7b600-61f1-11e9-9ebf-67b17d5ba125)
-
-## Demo
-
-* [Demo page demonstrating building - SASS, JavaScript, Images, Fonts, HTML](https://weareathlon.github.io/frontend-webpack-boilerplate/)
-
-Table of Contents
-=================
-
-   * [Webpack 5 Boilerplate Template](#webpack-5-boilerplate-template)
-      * [Demo](#demo)
-      * [Features](#features)
-      * [Requirements](#requirements)
-   * [Setup](#setup)
-      * [Installation](#installation)
-      * [Define Package Metadata](#define-package-metadata)
-   * [Configuration](#configuration)
-      * [Environment Configuration](#environment-configuration)
-      * [Additional webpack configuration](#additional-webpack-configuration)
-   * [Development](#development)
-      * [Assets Source](#assets-source)
-      * [Build Assets](#build-assets)
-         * [One time build assets for development](#one-time-build-assets-for-development)
-         * [Build assets and enable source files watcher](#build-assets-and-enable-source-files-watcher)
-         * [Start a development server - reloading automatically after each file change.](#start-a-development-server---reloading-automatically-after-each-file-change)
-   * [Production](#production)
-      * [Build Assets](#build-assets-1)
-      * [Get Built Assets](#get-built-assets)
-   * [Run Code Style Linters](#run-code-style-linters)
-      * [SASS](#sass)
-      * [JavaScript](#javascript)
-   * [Additional Tools](#additional-tools)
-      * [Run Assets Bundle Analyzer](#run-assets-bundle-analyzer)
-      * [Continuous Integration](#continuous-integration)
+![Hero website](https://portfolioaran.netlify.app/images/content/halo.jpg)
 
 ## Features
 
