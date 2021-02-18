@@ -35,6 +35,6 @@ h6 {
   letter-spacing: .2rem;
 
   &.--light {
-    @include linear-gradient($color-primary-light, $color-white);
+    color: $color-white;
   }
 }

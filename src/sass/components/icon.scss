@@ -2,13 +2,12 @@
   display: inline-block;
   font-size: 6rem;
   padding: 1rem 0;
-  @include linear-gradient;
+  @include linear-gradient ($color-primary, $color-primary-dark);
   -webkit-background-clip: text;
   color: transparent;
 
   &.--small {
     font-size: 2rem;
     padding-right: 1.5rem;
-    color: $color-primary-dark;
   }
 }

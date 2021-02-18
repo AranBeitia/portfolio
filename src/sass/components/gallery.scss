@@ -39,8 +39,7 @@
     }
 
     @media (any-pointer: coarse) {
-      outline: 1rem solid $color-primary;
-      transform: none;
+      transition: none;
     }
 
     &.--img-1 {

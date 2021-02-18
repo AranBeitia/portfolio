@@ -1,15 +1,15 @@
 .u-margin-bottom-small { margin-bottom: 1rem !important; }
 
-.u-margin-bottom-big {
-  margin-bottom: 8rem !important;
+.u-margin-bottom {
+  margin-bottom: 4rem !important;
 
   @include is-tablet-landscape {
-    margin-bottom: 4rem !important;
+    margin-bottom: 3rem !important;
   }
 }
 
 .margin-tb-1 {
-  margin: 1rem 0;
+  margin: 1rem 0 !important;
 }
 
 .margin-t-2 {

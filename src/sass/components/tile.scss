@@ -2,12 +2,10 @@
   position: relative;
   transition: transform 0.5s ease, opacity 0.5s ease;
   box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-  cursor: pointer;
   height: 30rem;
 
   &__image {
-    transition: transform 0.5s ease;
-    border-radius: 4px;
+    border-radius: 5px;
     overflow: hidden;
 
     &::before {
@@ -18,9 +16,9 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: #333333;
-      opacity: 0.35;
-      transition: background-color 0.5s ease, opacity 0.5s ease;
+      background-color: rgba($color-black, .9);
+      opacity: .5;
+      transition: background-color .5s ease, opacity .5s ease;
     }
   }
 
@@ -33,21 +31,21 @@
     width: 100%;
     height: 100%;
     padding: 1rem;
-    border-radius: 5;
-    color: white;
+    border-radius: 5px;
+    color: $color-white;
     transition: background-color .5s ease, transform .5s ease;
   }
 
   &__title {
     text-transform: uppercase;
-    color: $color-white;
     padding: 1rem 1.5rem;
-    @include linear-gradient(rgba($color-primary-light, .85), rgba($color-primary-dark, .85));
+    color: $color-white;
+    @include linear-gradient(rgba($color-primary, .8), rgba($color-primary-dark, .8));
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
   }
 
-  &__text {
+  &__inner {
     width: 100%;
     max-height: 0;
     line-height: 1.5;
@@ -63,7 +61,7 @@
       @include linear-gradient($color-primary-light, $color-primary-dark);
     }
 
-    .tile__text {
+    .tile__inner{
       max-height: 15rem;
       opacity: 1;
     }
@@ -78,7 +76,7 @@
       @include linear-gradient($color-primary-light, $color-primary-dark);
     }
 
-    .tile__text {
+    .tile__inner {
       max-height: 15rem;
       opacity: 1;
     }

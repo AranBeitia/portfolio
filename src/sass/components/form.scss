@@ -19,4 +19,13 @@
       width: auto;
     }
   }
+
+  &__text {
+    margin: 1rem 0;
+    width: 50%;
+
+    @include is-mobile {
+      width: 100%;
+    }
+  }
 }

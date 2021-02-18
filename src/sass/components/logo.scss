@@ -3,10 +3,6 @@ $size-sm: $size / 2;
 .logo {
   height: $size;
 
-  &.--small {
-    height: $size-sm;
-  }
-
   @include is-mobile {
     height: $size-sm;
   }

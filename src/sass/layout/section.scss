@@ -57,12 +57,3 @@
     }
   }
 }
-
-.section-gradient {
-  padding: 10rem 0;
-  @include linear-gradient();
-
-  @include is-tablet-landscape {
-    padding: 5rem 0;
-  }
-}
