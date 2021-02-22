@@ -5,6 +5,5 @@ import '../sass/main.scss'
 
 /* Your JS Code goes here */
 import './nav.js';
-import './parallax.js';
 import './scroll.js';
 import './modal.js';

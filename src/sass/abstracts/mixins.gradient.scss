@@ -8,10 +8,10 @@
     background-position: top;
     background-attachment: fixed;
 
-  // @media screen and (min-resolution: 192dpi) and (max-width: $breakpoint-sm),
-  //         (-webkit-min-device-pixel-ratio: 2) and (max-width: $breakpoint-sm) {
-  //   background-attachment: scroll;
-  // }
+  @media screen and (min-resolution: 192dpi) and (max-width: $breakpoint-sm),
+          (-webkit-min-device-pixel-ratio: 2) and (max-width: $breakpoint-sm) {
+    background-attachment: scroll;
+  }
 }
 
 @mixin linear-gradient ($color-from: $color-primary-light, $color-to: $color-primary-dark){

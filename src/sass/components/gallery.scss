@@ -39,6 +39,8 @@
     }
 
     @media (any-pointer: coarse) {
+      outline-offset: none;
+      outline: none;
       transition: none;
     }
 
