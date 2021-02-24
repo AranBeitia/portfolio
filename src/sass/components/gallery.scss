@@ -38,11 +38,15 @@
       z-index: 2;
 
       @media (any-pointer: coarse) {
-        outline-offset: none;
         outline: none;
-        transition: none;
         transform: none;
       }
+    }
+
+    @media (any-pointer: coarse) {
+      outline-offset: none;
+      transition: none;
+      box-shadow: none;
     }
 
     &.--img-1 {
@@ -53,7 +57,6 @@
         grid-column: 1;
         grid-row: 2;
         justify-self: center;
-        box-shadow: none;
       }
     }
 
