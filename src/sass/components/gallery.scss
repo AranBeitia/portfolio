@@ -5,8 +5,8 @@
   grid-template-rows: 6rem 3rem auto 3rem;
 
   @include is-tablet-landscape {
-    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
-    grid-template-rows: 2rem 1fr 3rem 3rem auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
   }
 
   &__text {
@@ -15,8 +15,8 @@
     margin-right: 2rem;
 
     @include is-tablet-landscape {
-      grid-column: 1 / span 5;
-      grid-row: 2;
+      grid-column: 1;
+      grid-row: 1;
       margin-right: 0;
       margin-bottom: 2rem;
     }
@@ -36,12 +36,13 @@
       transform: scale(1.05) translateY(-.5rem);
       box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
       z-index: 2;
-    }
 
-    @media (any-pointer: coarse) {
-      outline-offset: none;
-      outline: none;
-      transition: none;
+      @media (any-pointer: coarse) {
+        outline-offset: none;
+        outline: none;
+        transition: none;
+        transform: none;
+      }
     }
 
     &.--img-1 {
@@ -49,8 +50,10 @@
       grid-row: 2;
 
       @include is-tablet-landscape {
-        grid-column: 1 / span 2;
-        grid-row: 4 / span 2;
+        grid-column: 1;
+        grid-row: 2;
+        justify-self: center;
+        box-shadow: none;
       }
     }
 
@@ -61,6 +64,7 @@
       @include is-tablet-landscape {
         grid-column: 2 / span 3;
         grid-row: 5;
+        display: none;
       }
 
       @include is-mobile {
@@ -73,8 +77,9 @@
       grid-row: 1;
 
       @include is-tablet-landscape {
-        grid-row: 3;
-        grid-column: 4 / 6;
+        // grid-row: 3;
+        // grid-column: 4 / 6;
+        display: none;
       }
     }
   }
