@@ -1,5 +1,5 @@
 .footer {
-  @include linear-gradient();
+  @include linear-gradient(rgba($color-primary, .8), rgba($color-primary-dark, .8));
   padding-top: 5rem;
 
   &__copyright {
