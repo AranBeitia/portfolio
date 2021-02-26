@@ -36,8 +36,11 @@ function renderPortfolio(jobId) {
     const job = jobs[jobId]
 
     let html = `
-      <h2 class="text-center">${job.title}</h2>
-      <img src="images/content/web/${job.imgUrl}" alt="${job.title}" class="modal__image">
+      <h2 class="modal__title">${job.title}</h2>
+      <figure class="modal__figure">
+        <figcaption class="modal__caption">${job.description}</figcaption>
+        <img src="images/content/web/${job.imgUrl}" alt="${job.title}" class="modal__image">
+      </figure>
     `
     document.getElementById('modal-content').innerHTML = html
    })

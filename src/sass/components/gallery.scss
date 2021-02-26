@@ -1,85 +1,3 @@
-//irregular gallery with grid layout
-.irregular-grid {
-  display: grid;
-  grid-template-columns: 12fr 3fr 3fr 1fr 6fr;
-  grid-template-rows: 6rem 3rem auto 3rem;
-
-  @include is-tablet-landscape {
-    grid-template-columns: 1fr;
-    grid-template-rows: 3rem 1fr;
-  }
-
-  &__text {
-    grid-column: 1;
-    grid-row: 2;
-    margin-right: 2rem;
-
-    @include is-tablet-landscape {
-      margin-right: 0;
-    }
-  }
-
-  &__img {
-    border-radius: 3px;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
-    outline-offset: 1.5rem;
-    z-index: 1;
-    transition: all .2s;
-    max-width: 100%;
-    width: auto;
-
-    @include is-tablet-landscape {
-      box-shadow: none;
-    }
-
-    &:hover {
-      outline: 1.5rem solid $color-primary;
-      transform: scale(1.05) translateY(-.5rem);
-      box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
-      z-index: 2;
-
-      @include is-tablet-landscape {
-        outline: none;
-        transform: none;
-        box-shadow: none;
-      }
-    }
-
-    @media (any-pointer: coarse) {
-      transition: none;
-    }
-
-    &.--img-1 {
-      grid-column: 2 / span 2;
-      grid-row: 2;
-
-      @include is-tablet-landscape {
-        grid-column: 1;
-        grid-row: 3;
-        justify-self: center;
-      }
-    }
-
-    &.--img-2 {
-      grid-column: 3 /span 3;
-      grid-row: 3;
-
-      @include is-tablet-landscape {
-        display: none;
-      }
-    }
-
-    &.--img-3 {
-      grid-column: 5;
-      grid-row: 1;
-
-      @include is-tablet-landscape {
-        display: none;
-      }
-    }
-  }
-}
-
 //portfolio gallery
 .web-img {
   height: 100%;
@@ -94,4 +12,9 @@
       background-image: url('#{$image-path}web/img-#{$i}.jpg');
     }
   }
+}
+
+.image {
+  max-width: 100%;
+  width: auto;
 }

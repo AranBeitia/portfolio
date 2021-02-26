@@ -24,9 +24,9 @@
   }
 
   &__wrapper {
-    position: relative;
     @include flex(flex, start, center);
     flex-direction: column;
+    position: relative;
     margin: 0;
     padding: $size;
     background-color: $color-white;
@@ -88,7 +88,26 @@
     }
   }
 
+  &__title {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: $color-primary;
+    color: var(--color-primary);
+  }
+
+  &__figure {
+    @include flex(flex, center, center);
+    flex-direction: column;
+    margin: 2rem;
+
+    @include is-tablet-landscape {
+      margin: 0;
+    }
+  }
+
   &__image {
-    width: 100%;
+    max-width: 100%;
+    width: auto;
+    padding: 2rem 0;
   }
 }

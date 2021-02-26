@@ -41,7 +41,7 @@
 
 .section-background {
   padding: 10rem 0;
-  @include linear-gradient-image($image-path + 'web.jpg');
+  @include linear-gradient-image($image-path + 'webBg.jpg');
   transform: skewY(-7deg);
   margin-top: -12rem;
 
