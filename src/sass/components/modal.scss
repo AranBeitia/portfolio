@@ -29,6 +29,7 @@
     position: relative;
     margin: 0;
     padding: $size;
+    width: 80%;
     background-color: $color-white;
     border-radius: 0.3125rem;
     box-shadow: 0 0 $size rgba($color-black, .5);
@@ -103,6 +104,10 @@
     @include is-tablet-landscape {
       margin: 0;
     }
+  }
+
+  &__caption {
+    text-align: center;
   }
 
   &__image {

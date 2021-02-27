@@ -9,7 +9,7 @@
 
   @for $i from 1 through 8 {
     &.--image-#{$i}{
-      background-image: url('#{$image-path}web/img-#{$i}.jpg');
+      background-image: url('#{$image-path}web/thumbnail-#{$i}.jpg');
     }
   }
 }
