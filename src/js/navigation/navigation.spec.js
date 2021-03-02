@@ -2,9 +2,6 @@ describe('Navigation toggle', () => {
   beforeEach(() => jest.resetModules())
 
   it('displays menu after click in the button', () => {
-    // given when then
-    // Arrange-Act-Assert
-
     // given - button (menu is hidden) toggle (.navigation__button)
     document.body.innerHTML = `
       <div>
@@ -13,12 +10,12 @@ describe('Navigation toggle', () => {
         <div class="navigation__nav"></div>
       </div>
     `
-    require ('./nav.js')
+    require('./navigation.js')
     // when - click
     document.querySelector('.navigation__button').click()
     // then - shows the menu
     expect(
-      document.querySelector('.navigation__background').classList
+    document.querySelector('.navigation__background').classList
       ).toContain('--visible')
     expect(document.querySelector('.navigation__nav').classList).toContain('--visible')
   })
@@ -32,7 +29,7 @@ describe('Navigation toggle', () => {
         <div class="navigation__nav --visible"></div>
       </div>
     `
-    require('./nav.js')
+    require('./navigation.js')
     //when - click
     document.querySelector('.navigation__button').click()
     //then - menu is hidden
@@ -41,6 +38,7 @@ describe('Navigation toggle', () => {
   })
 
   it('hides menu after clicking an element of the menu list', () => {
+    //given - item list clicks, menu is hidden (toggle .--visible)
     document.body.innerHTML =`
       <div>
         <ul>
@@ -50,8 +48,9 @@ describe('Navigation toggle', () => {
         <div class="navigation__nav --visible"></div>
       </div>
     `
+    require('./navigation.js')
     //when
-    document.querySelectorAll('.navigation__link').forEach(item => item.click())
+    document.querySelector('.navigation__link').click()
     //then
     expect(document.querySelector('.navigation__nav').classList).not.toContain('--visible')
   })

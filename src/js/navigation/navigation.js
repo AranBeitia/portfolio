@@ -1,5 +1,8 @@
-const button = document.querySelector('.navigation__button')
 const items = document.querySelectorAll('.navigation__link')
+
+items.forEach(item => {
+  item.addEventListener('click', toggleMenu)
+})
 
 function toggleMenu () {
   const background = document.querySelector('.navigation__background')
@@ -9,7 +12,5 @@ function toggleMenu () {
   menu.classList.toggle('--visible')
 }
 
-button.addEventListener('click', toggleMenu)
-items.forEach(item => {
-  item.addEventListener('click', toggleMenu)
-})
+const button = document.querySelector('.navigation__button')
+if (button) button.addEventListener('click', toggleMenu)

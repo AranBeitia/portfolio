@@ -10,7 +10,7 @@
   {
     "id": 2,
     "title": "My easy santé",
-    "description": "Maquetación para web y apps android e IOS. Desarrollo de producto para Axa Healthkeeper, implementación de diseños a demanda sin frameworks, desarrollado en VueJS.",
+    "description": "Layout for web, android and IOS apps. Product development for Axa Healthkeeper, implementation of on-demand designs without frameworks, developed in VueJS.",
     "imgUrl": "axa-fr.jpg"
   },
   "donostia-tw":
@@ -23,7 +23,7 @@
   "metaposta": {
     "id": 4,
     "title": "Metaposta",
-    "description": "Desarrollo front end siguiendo los estándares web y de accesibilidad nivel",
+    "description": "Front end development following the AA level web and accessibility standards",
     "imgUrl": "metaposta.jpg"
   },
   "sure-planet": {
@@ -48,7 +48,7 @@
   "mi-convenio": {
     "id": 8,
     "title": "Mi convenio",
-    "description": "Diseño y reestructuración completa del sitio web miConvenio.com, desarrollada en asp.net",
+    "description": "Design and complete restructuring of the miConvenio.com website, developed in Asp.net",
     "imgUrl": "mi-convenio.jpg"
   }
 }
