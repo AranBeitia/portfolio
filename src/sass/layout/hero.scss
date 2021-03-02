@@ -2,7 +2,7 @@
   @include flex(flex, center,center);
   flex-direction: column;
   position: relative;
-  @include linear-gradient-image('#{$image-path}hero.jpg');
+  @include linear-gradient-image('#{$image-path}heroBg.jpg');
 
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);

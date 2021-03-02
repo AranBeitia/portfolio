@@ -3,52 +3,52 @@
   {
     "id": 1,
     "title": "Axa Healthkeeper",
-    "description": "Maquetación para web y apps android e IOS. Desarrollo de producto para Axa Healthkeeper, implementación de diseños a demanda sin frameworks, desarrollado en AngularJS.",
-    "imgUrl": "img-1.jpg"
+    "description": "Layout for web, android and IOS apps. Product development for Axa Healthkeeper, implementation of on-demand designs without frameworks, developed in AngularJS.",
+    "imgUrl": "axa.jpg"
   },
   "axa-fr":
   {
     "id": 2,
     "title": "My easy santé",
     "description": "Maquetación para web y apps android e IOS. Desarrollo de producto para Axa Healthkeeper, implementación de diseños a demanda sin frameworks, desarrollado en VueJS.",
-    "imgUrl": "img-2.jpg"
+    "imgUrl": "axa-fr.jpg"
   },
   "donostia-tw":
   {
     "id": 3,
     "title": "Donostia Tech Week",
-    "description": "Maquetación en WordPress de web Donostia Tech Week en su edición del 2017, evento tecnológico promovido por Ve Interactive. Diseño del logotipo.",
-    "imgUrl": "img-3.jpg"
+    "description": "WordPress layout for the Donostia Tech Week website in its 2017 edition, technological event promoted by Ve Interactive. Logo design adapted from the Bilbao Tech Week brand",
+    "imgUrl": "dtw.jpg"
   },
-  "ve-interactive":
-  {
+  "metaposta": {
     "id": 4,
-    "title": "Ve interactive",
-    "description": "Desarrollo de aplicaciones en plataforma pata ayudar a empresas online a generar tráfico, aumentar engagement, minimizar el abandono del sitio web, y aumentar las conversiones en procesos de compra.",
-    "imgUrl": "img-4.jpg"
+    "title": "Metaposta",
+    "description": "Desarrollo front end siguiendo los estándares web y de accesibilidad nivel",
+    "imgUrl": "metaposta.jpg"
   },
   "sure-planet": {
     "id": 5,
     "title": "Sure Planet",
-    "description": "Maquetación en WordPress de web Donostia Tech Week en su edición del 2017, evento tecnológico promovido por Ve Interactive. Diseño del logotipo.",
-    "imgUrl": "img-5.jpg"
+    "description": "Portal development in Asp.net, JavaScript, JQuery, HTML5 and CSS3",
+    "imgUrl": "sure.jpg"
+  },
+  "bbk": {
+    "id": 6,
+    "title": "Bilbao Bizkaia Kutxa",
+    "description": "Content management and development of microsites",
+    "imgUrl": "bbk.jpg"
   },
   "novocal": {
-    "id": 6,
-    "title": "Novocal",
-    "description": "Desarrollo del portal para nueva imagen corporativa",
-    "imgUrl": "img-6.jpg"
-  },
-  "metaposta": {
     "id": 7,
-    "title": "Metaposta",
-    "description": "Desarrollo front end siguiendo los estándares web y de accesibilidad nivel",
-    "imgUrl": "img-7.jpg"
+    "title": "Novocal",
+    "description": "Design, content management and development of the portal for a new corporate image",
+    "imgUrl": "novocal.jpg"
   },
+
   "mi-convenio": {
     "id": 8,
     "title": "Mi convenio",
     "description": "Diseño y reestructuración completa del sitio web miConvenio.com, desarrollada en asp.net",
-    "imgUrl": "img-8.jpg"
+    "imgUrl": "mi-convenio.jpg"
   }
 }

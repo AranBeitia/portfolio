@@ -23,8 +23,9 @@
     padding: 25rem 0 20rem;
     margin-top: -25vh;
 
-    @include is-mobile {
+    @include is-tablet-landscape {
       padding: 20rem 0 15rem;
+      margin-top: -18vh;
     }
   }
 
@@ -40,7 +41,7 @@
 
 .section-background {
   padding: 10rem 0;
-  @include linear-gradient-image($image-path + 'web.jpg');
+  @include linear-gradient-image($image-path + 'webBg.jpg');
   transform: skewY(-7deg);
   margin-top: -12rem;
 
